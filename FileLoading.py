@@ -8,6 +8,7 @@
 """
  
 import sys
+import os
 sys.path.insert(0, '/home/claude')
  
 from setswana_parser import (
@@ -21,8 +22,8 @@ from tabulate import tabulate
 # ─────────────────────────────────────────────────────────
 # FILE PATHS — update these if your files are elsewhere
 # ─────────────────────────────────────────────────────────
-DEFINITIONS_FILE = '\C:\PYTHON\definitions.txt'
-RULES_FILE       = '\C:\PYTHON\Parsing rules testing.txt'
+DEFINITIONS_FILE = "definitions.txt"
+RULES_FILE       = "Parsing rules testing.txt"
  
 # ─────────────────────────────────────────────────────────
 # COLOURS FOR TERMINAL OUTPUT
@@ -46,18 +47,18 @@ results = {
  
 def PASS(test_name, message=""):
     results["passed"] += 1
-    results["details"].append(("✅ PASS", test_name, message))
-    print(f"  {GREEN}✅ PASS{RESET} — {test_name}" + (f": {message}" if message else ""))
+    results["details"].append((" PASS", test_name, message))
+    print(f"  {GREEN} PASS{RESET} — {test_name}" + (f": {message}" if message else ""))
  
 def FAIL(test_name, message=""):
     results["failed"] += 1
-    results["details"].append(("❌ FAIL", test_name, message))
-    print(f"  {RED}❌ FAIL{RESET} — {test_name}" + (f": {message}" if message else ""))
+    results["details"].append((" FAIL", test_name, message))
+    print(f"  {RED} FAIL{RESET} — {test_name}" + (f": {message}" if message else ""))
  
 def WARN(test_name, message=""):
     results["warnings"] += 1
-    results["details"].append(("⚠️  WARN", test_name, message))
-    print(f"  {YELLOW}⚠️  WARN{RESET} — {test_name}" + (f": {message}" if message else ""))
+    results["details"].append(("  WARN", test_name, message))
+    print(f"  {YELLOW}  WARN{RESET} — {test_name}" + (f": {message}" if message else ""))
  
 def section(title):
     print(f"\n{BOLD}{BLUE}{'─'*60}{RESET}")
@@ -72,12 +73,16 @@ print(f"\n{BOLD}{'='*60}{RESET}")
 print(f"{BOLD}   🐍 SETSWANA PARSER — TEST SUITE{RESET}")
 print(f"{BOLD}{'='*60}{RESET}")
 print("\n⏳ Loading files...\n")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFINITIONS_FILE = os.path.join(BASE_DIR, 'definitions.txt')
+RULES_FILE = os.path.join(BASE_DIR, 'Parsing rules testing.txt')
  
-word_to_tag = load_definitions("definitions.txt")
-grammar     = build_grammar_string("Parsing Rules Testing.txt")
+word_to_tag = load_definitions(DEFINITIONS_FILE)
+grammar     = build_grammar_string(RULES_FILE)
  
-print(f"  📂 definitions.txt  → {len(word_to_tag)} words loaded")
-print(f"  📂 rules file       → Grammar rules loaded")
+print(f"   definitions.txt  → {len(word_to_tag)} words loaded")
+print(f"   rules file       → Grammar rules loaded")
  
  
 # ══════════════════════════════════════════════════════════
