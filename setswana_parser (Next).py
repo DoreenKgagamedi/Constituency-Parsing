@@ -83,8 +83,8 @@ def load_rules(filepath):
             if line.strip().startswith('#') or line.strip().startswith('*'):
                 continue
 
-            # Remove inline comments like  ***** remove
-            line = re.sub(r'\*+.*', '', line).rstrip()
+            # Remove inline comments like  *** remove
+            line = re.sub(r'\+.', '', line).rstrip()
             if not line.strip():
                 continue
 
@@ -121,7 +121,7 @@ def build_grammar_string(filepath):
                 continue
 
             # Remove inline comments
-            line = re.sub(r'\*+.*', '', line).rstrip()
+            line = re.sub(r'\+.', '', line).rstrip()
             if not line.strip():
                 continue
 
@@ -217,7 +217,7 @@ def display_tagging(tagged_tokens, sentence):
         'lesoboki':          'Lesoboki (Totality Word)',
         'EE1':               'Felo (Locative)',
         'EE2':               'Mokgwa (Manner)',
-        'UNKNOWN':           '⚠ Ga go itsege (Unknown)',
+        'UNKNOWN':           ' Ga go itsege (Unknown)',
     }
 
     # Add CC and L tags
@@ -249,26 +249,26 @@ def display_constituents(tagged_tokens):
             groups[tag] = []
         groups[tag].append(word)
 
-    print("\n  📌 CONSTITUENCY BREAKDOWN:")
+    print("\n   CONSTITUENCY BREAKDOWN:")
     print("-" * 65)
 
     friendly = {
-        'VRB':               '🟢 Leamanyi — Verbs',
-        'VRB_ng':            '🟢 Leamanyi_ng — Verbs (-ng form)',
-        'VBMD':              '🟢 Leamanyi — Mood Verbs',
-        'VBPT':              '🟢 Leamanyi — Past Tense Verbs',
-        'NN':                '🔵 Lerui — Nouns',
-        'NN_ng':             '🔵 Lerui_ng — Nouns (-ng form)',
-        'letlhaodi_thito':   '🟡 Letlhaodi — Adjective/Adverb',
-        'letlhaodi_tota':    '🟡 Letlhaodi_tota — Intensifier',
-        'letlhalosi_mokgwa': '🟠 Letlhalosi Mokgwa — Manner',
-        'letlhalosi_nako':   '🟠 Letlhalosi Nako — Time',
-        'letlhalosi_felo_P': '🟠 Letlhalosi Felo — Place',
-        'leemedi':           '🟣 Leemedi — Pronoun',
-        'lesupi':            '🟣 Lesupi — Demonstrative',
-        'lebadi_thito':      '🟤 Lebadi — Quantifier/Number',
-        'lesoboki':          '🟤 Lesoboki — Totality',
-        'UNKNOWN':           '❓ Ga go itsege — Unknown',
+        'VRB':               ' Leamanyi — Verbs',
+        'VRB_ng':            ' Leamanyi_ng — Verbs (-ng form)',
+        'VBMD':              ' Leamanyi — Mood Verbs',
+        'VBPT':              ' Leamanyi — Past Tense Verbs',
+        'NN':                ' Lerui — Nouns',
+        'NN_ng':             ' Lerui_ng — Nouns (-ng form)',
+        'letlhaodi_thito':   ' Letlhaodi — Adjective/Adverb',
+        'letlhaodi_tota':    ' Letlhaodi_tota — Intensifier',
+        'letlhalosi_mokgwa': ' Letlhalosi Mokgwa — Manner',
+        'letlhalosi_nako':   ' Letlhalosi Nako — Time',
+        'letlhalosi_felo_P': ' Letlhalosi Felo — Place',
+        'leemedi':           ' Leemedi — Pronoun',
+        'lesupi':            ' Lesupi — Demonstrative',
+        'lebadi_thito':      ' Lebadi — Quantifier/Number',
+        'lesoboki':          ' Lesoboki — Totality',
+        'UNKNOWN':           ' Ga go itsege — Unknown',
     }
 
     for tag, words in groups.items():
@@ -279,73 +279,60 @@ def display_constituents(tagged_tokens):
 
 
 def display_tree(tree):
-    """
-    Displays the NLTK parse tree in 3 different ways:
+    """Prints the NLTK parse tree in multiple formats."""
+    if tree:
+        print("\n  PARSE TREE (Bracket Notation):")
+        print("-" * 65)
+        print(tree)
 
-    WAY 1 — Flat text:     (S (NP kgosi/NN) reka/VRB (NP koloi/NN))
-    WAY 2 — ASCII diagram: draws the tree as branches in the terminal
-    WAY 3 — Visual popup:  opens a real graphical tree window (requires tkinter)
-    """
-    if not tree:
-        print("  ⚠️  No tree to display.")
-        return
+        print("\n  PARSE TREE (Visual):")
+        print("-" * 65)
+        tree.pretty_print()  # ASCII tree in terminal
+        print("=" * 65)
 
-    # ── WAY 1: Flat one-line text representation ──────────────
-    print("\n  🌳 TREE — WAY 1: Flat Text")
-    print("-" * 65)
-    print(" ", tree)                      # prints: (S (NP kgosi/NN) reka/VRB ...)
-
-    # ── WAY 2: ASCII diagram in the terminal ──────────────────
-    print("\n  🌳 TREE — WAY 2: ASCII Diagram")
-    print("-" * 65)
-    tree.pretty_print()                   # draws branches using | and _ characters
-
-    # ── WAY 3: Visual popup window ────────────────────────────
-    print("\n  🌳 TREE — WAY 3: Visual Popup Window")
-    print("-" * 65)
-    try:
-        tree.draw()                       # opens a tkinter GUI window with the tree
-        print("  ✅ Tree window opened! Close it to continue.")
-    except Exception:
-        print("  ⚠️  Visual window unavailable in this environment.")
-        print("      Run the code on your own computer to see the popup tree.")
-
-    print("=" * 65)
-
+        tree.draw()          # Opens popup window
+    else:
+        print("\n  No parse tree generated.")
+        print("=" * 65)
 
 # ─────────────────────────────────────────────────────────
 # STEP 6: MAIN PROGRAM — Bring it all together
 # ─────────────────────────────────────────────────────────
 
 def main():
-    # File paths — adjust if needed
-    DEFINITIONS_FILE = '/mnt/user-data/uploads/definitions.txt'
-    RULES_FILE       = '/mnt/user-data/uploads/Parsing_rules_testing.txt'
-
+    import os
+    
+    # This gets the folder where setswana_parser.py is saved
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    # Build full paths from that folder
+    DEFINITIONS_FILE = os.path.join(BASE_DIR, 'definitions.txt')
+    RULES_FILE       = os.path.join(BASE_DIR, 'Parsing rules testing.txt')
+    
     print("\n" + "=" * 65)
-    print("   🐍 SETSWANA CONSTITUENCY PARSER")
+    print("    SETSWANA CONSTITUENCY PARSER")
     print("   Powered by NLTK + Your Definitions & Rules Files")
     print("=" * 65)
 
     # Load files
-    print("\n⏳ Loading definitions from definitions.txt ...")
+    print("\n Loading definitions from definitions.txt ...")
     word_to_tag = load_definitions(DEFINITIONS_FILE)
-    print(f"   ✅ Loaded {len(word_to_tag)} word definitions.")
+    print(f"    Loaded {len(word_to_tag)} word definitions.")
 
-    print("⏳ Loading grammar rules from Parsing_rules_testing.txt ...")
+    print(" Loading grammar rules from Parsing_rules_testing.txt ...")
     grammar_string = load_rules(RULES_FILE)
-    print(f"   ✅ Grammar rules loaded successfully.")
+    print(f"    Grammar rules loaded successfully.")
 
     print("\nType a Setswana sentence and press Enter.")
     print("Type 'exit' to quit.\n")
 
     while True:
-        sentence = input("👉 Sentence: ").strip()
+        sentence = input(" Sentence: ").strip()
 
         if not sentence:
             continue
         if sentence.lower() == 'exit':
-            print("\nTsamaya sentle! 👋\n")
+            print("\nTsamaya sentle! \n")
             break
 
         # Tag the words
@@ -366,3 +353,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
