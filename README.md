@@ -222,10 +222,10 @@ A passing run looks like this:
 ╒══════════════════╤═════════╤══════════╕
 │ Result           │  Count  │ Rate     │
 ╞══════════════════╪═════════╪══════════╡
-│  Tests Passed    │   57    │ 100.0%   │
+│  Tests Passed    │   58    │ 100.0%   │
 │  Tests Failed    │    0    │          │
 │  Warnings        │    0    │          │
-│  Total Tests     │   57    │          │
+│  Total Tests     │   58    │          │
 ╘══════════════════╧═════════╧══════════╛
 
 ALL TESTS PASSED! Your parser is working perfectly!
