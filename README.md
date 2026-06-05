@@ -12,7 +12,7 @@ This project was built using **Python** and the **NLTK (Natural Language Toolkit
 ```
 Constituency-Parsing/
 │
-├── setswana_parser (Next).py     ← Main parser — run this to parse sentences
+├── setswana_parser.py            ← Main parser — run this to parse sentences
 ├── Tester.py                     ← Test suite — run this to verify the parser
 ├── definitions.txt               ← Setswana word dictionary (572 words, 88 tags)
 ├── Parsing rules testing.txt     ← Grammar rules for constituency parsing
@@ -104,7 +104,7 @@ Make sure all four files are in the **same folder**:
 
 ```
  Your Project Folder
-    ├── setswana_parser (Next).py
+    ├── setswana_parser.py
     ├── Tester.py
     ├── definitions.txt
     └── Parsing rules testing.txt
@@ -113,7 +113,7 @@ Make sure all four files are in the **same folder**:
 ### Step 4 — Run the Parser
 
 ```bash
-python "setswana_parser (Next).py"
+python "setswana_parser.py"
 ```
 
 You will see:
