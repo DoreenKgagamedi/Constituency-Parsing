@@ -1,0 +1,1217 @@
+CLAUSES
+CLAUSE: {<NP><VP>}
+FA_GORE_CLAUSE: {<L25|CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VP>}
+FA_GORE_CLAUSE: {<L25|CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L20><CC6><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+FA_GORE_CLAUSE: {<L25|CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L20><CC6><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+ o supile fa ba gateletswe (fa ba gateletswe is complementing supile and is part of VP)
+ ba robale fa ba gateletswe (fa ba gateletse temporal adverbial clause and not part of VP)
+
+
+GORE(THAT)
+
+Complemetizer: {<CC2><NP><L44><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VPMD>}
+Complemetizer: {<CC2><L44><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>}
+Complemetizer: {<CC2><L44><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Complemetizer: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>}
+Complemetizer: {<CC2><NP><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L03><VP>}
+Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L03><VP>}
+Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L61><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>
+Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
+Complemetizer: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L61><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
+Complemetizer: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L61><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
+Complemetizer: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L61><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><L03><VP>}
+
+GORE (SO THAT (purpose))
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>
+Adv_CL: {<CC2><VP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><L03><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><L03><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VP>}
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VP>}
+
+GO(TO)
+Go_Complement: {<C15><VP>}
+Go_Complement: {<C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+Go_Complement: {<C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VP>}
+
+o batla go tsamaya (go tsamaya is infinitive complemnt and part of the VP)
+o batla go e reka (infinitive complement)
+o duetse madi a mantsi go e reka (adjunct, not part of VP)
+re ne ra ema go huba maoto (adverb)
+re ne ra emisa go huba maoto (object)
+
+FA(WHEN,IF,THAT)
+
+KA GORE (becaue,by saying (ka go re),about,by )
+
+lerui:  {<CC3|L12|L31|L29|L44|L27|L22|L02|CC7><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
+lerui:  {<CC3|L12|L31|L29|L44|L27|L22|L02|CC7><CC2><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39>}
+lerui:  {<CC3|L12|L31|L29|L44|L27|L22|L02|CC7><CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39>}
+letlhalosi:{letlhalosi CC6 letlhalosi}
+letlhaodi:{<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><letlhaodi_thito>}
+
+Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L02><VP>}
+Adv_Reason: {<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L02><VP>}
+Adv_Reason:	{<L01><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason:	{<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L02><VP>}
+Adv_Reason:	{<L01><CC2><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason:	{<L01><CC2><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC8><letlhaodi>}
+Adv_Reason: {<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC8><letlhaodi>}
+Adv_Reason: {<L01><CC2>
+Adv_Reason: {<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15><VP>}
+
+AdvT: {<letlhalosi_nako>}
+AdvT: {<L25><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
+AdvT: {<L56><CC6><L56>}
+      {<L57><CC6><L57>}
+	  {<L58><CC6><L58>}
+	  {<L59><CC6><L59>}
+	  {<L60><CC6><L60>}
+	  
+AdvM: {<L01|L23><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+      {<letlhalosi_mokgwa>}
+	  {<C14><L55><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
+	  {<C14><CC3><L04><CC3><VP>}
+	  {<C14><CC4><L04><L31><VP>}
+	  {<C14><CC5><L04><L12><VP>}
+	  {<C14><CC6><L04><L29><VP>}
+	  {<C14><CC7><L04><CC7><VP>}
+	  {<C14><CC8><L04><L02><VP>}
+	  {<C14><C10><L04><L22><VP>}
+	  {<C14><C11><L04><L32><VP>}
+	  {<C14><C13><L04><L27><VP>}
+	  {<C14><C15><L04><L46><VP>}
+	  {<C14><L39><L04><L45><VP>}
+	  {<C14><L28><L04><L02><VP>}
+	  
+	  {<C14><CC7><CC8><L01><L10><CC7><VP>}
+	  {<C14><CC3><CC8><L01><L10><CC3><VP>}
+	  {<C14><CC4><CC8><L01><L10><L31><VP>}
+	  {<C14><CC5><CC8><L01><L10><L12><VP>}
+	  {<C14><CC6><CC8><L01><L10><L29><VP>}
+	  {<C14><CC8><CC8><L01><L10><L02><VP>}
+	  {<C14><C10><CC8><L01><L10><L22><VP>}
+	  {<C14><C11><CC8><L01><L10><L32><VP>}
+	  {<C14><C13><CC8><L01><L10><L27><VP>}
+	  {<C14><C15><CC8><L01><L10><L44><VP>}
+	  {<C14><L39><CC8><L01><L10><L45><VP>}
+	  {<C14><L28><CC8><L01><L10><L01><VP>}
+	  
+	  {<C14><CC7><L04><CC7><CC8><L01><L28><CC7><VP>}
+	  {<C14><CC3><L04><CC3><CC8><L01><L28><CC3><VP>}
+	  {<C14><CC4><L04><CC7><CC8><L01><L28><CC7><VP>}
+	  {<C14><CC4><L04><CC4><CC8><L01><L28><L31><VP>}
+	  {<C14><CC5><L04><CC5><CC8><L01><L28><L12><VP>}
+	  {<C14><CC6><L04><CC6><CC8><L01><L28><L29><VP>}
+	  {<C14><CC8><L04><CC8><CC8><L01><L28><L02><VP>}
+	  {<C14><C10><L04><C10><CC8><L01><L28><L22><VP>}
+	  {<C14><C11><L04><C11><CC8><L01><L28><L32><VP>}
+	  {<C14><C13><L04><C13><CC8><L01><L28><L27><VP>}
+	  {<C14><C15><L04><C15><CC8><L01><L28><L44><VP>}
+	  {<C14><L39><L04><L39><CC8><L01><L28><L45><VP>}
+	  {<C14><L28><L04><L28><CC8><L01><L28><L01><VP>}
+	  
+	  {<C14><CC7><L04><CC7><L01><CC8><VP>}
+	  {<C14><CC3><L04><CC3><L01><CC8><VP>}
+	  {<C14><CC4><L04><CC4><L01><CC8><VP>}
+	  {<C14><CC5><L04><CC5><L01><CC8><VP>}
+	  {<C14><CC6><L04><CC6><L01><CC8><VP>}
+	  {<C14><CC8><L04><CC8><L01><CC8><VP>}
+	  {<C14><C10><L04><C10><L01><CC8><VP>}
+	  {<C14><C11><L04><C11><L01><CC8><VP>}
+	  {<C14><C13><L04><C13><L01><CC8><VP>}
+	  {<C14><C15><L04><C15><L01><CC8><VP>}
+	  {<C14><L39><L04><L39><L01><CC8><VP>}
+	  {<C14><L28><L04><L28><L01><CC8><VP>}
+	  
+	  {<C14><CC7><L01><CC8><VP_ng>}
+	  {<C14><CC3><L01><CC8><VP_ng>}
+	  {<C14><CC4><L01><CC8><VP_ng>}
+	  {<C14><CC5><L01><CC8><VP_ng>}
+	  {<C14><CC6><L01><CC8><VP_ng>}
+	  {<C14><CC8><L01><CC8><VP_ng>}
+	  {<C14><C10><L01><CC8><VP_ng>}
+	  {<C14><C11><L01><CC8><VP_ng>}
+	  {<C14><C13><L01><CC8><VP_ng>}
+	  {<C14><C15><L01><CC8><VP_ng>}
+	  {<C14><L28><L01><CC8><VP_ng>}
+	  {<C14><L39><L01><CC8><VP_ng>}
+	  
+	  {<L01><L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	  {<L01><L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L01><L49>}
+	  {<L01><L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	  {<L01><L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L01><L49>}
+	  {<L01><L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L39><VP_ng>}
+	  {<L01><L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L39><VP_ng><L01><L49>}
+
+AdvP:{<C14><C15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+     {<L24|L25><C15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+	 {<L24|L25><C15><VP_ng>}
+	 {<L24|L25><C15><VP_ng><L49>}
+	 {<L24|L25><C15><L02><VP_ng><L49>}
+	 {<L24|L25><C15><L02><VP_ng>}
+	 {<L24|L25><NP_ng>}
+	 {<letlhalosi_felo>}
+	 {<L01><L25><letlhalosi_felo_P><L44><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi>}
+	 {<L25><letlhalosi_felo_P><L44><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi>}
+	 {<letlhalosi_felo><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi|l49>}
+	 {<L24|L25><C15><L15><CC6><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi>}
+	 {<L24|L25><C15><L15><CC6><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi><L49>}
+	 {<L24|L25><C15><CC8><L15><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi>}
+	 {<L24|L25><C15><CC8><L15><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi><L49>}
+	 {<L24L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	 {<L24|L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L49>}
+	 {<L24|L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+	 {<L24|L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng><L49>}
+	 {<L24|L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L04|L05|L47|L48><VP><L49>}
+	 
+	 
+	 {<L24|L25><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L49>}
+	 {<L24|L25><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	 {<L24|L25><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng><L49>}
+	 {<l24|l25><letlhalosi_felo_P><L44><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi>}
+	 {<l24|l25><letlhalosi_felo_D><L27><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|letlhaodi>}
+	 {<L24L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L49>}
+	 {<L24L25><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	 {<L24|L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng><L49>}
+	 {<L24|L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
+	 
+	 
+VP_ng: (<VRB_ng>}
+       {<VP_ng><NP>
+	   {<VP_ng><NP|leemedi|lesupi|letlhaodi|lerui|leamanyi|lesoboki|lebadi><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+       {<VP_ng><AdvM><AdvT>}
+	   {<VP_ng><AdvP><AdvT>}
+	   {<VP_ng><AdvM|AdvP|AdvT>}
+       {<VP_ng><L28|L01|CC6><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi>} 
+       {<VP_ng><L28|L01|CC6><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><letlhalosi>}
+       {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
+	   {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
+	   {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><letlhalosi>}
+VP: (<VRB>}
+    {<VP><NP>}
+	{<VP><Go_Complement>}
+	{<VP><NP|leemedi|lesupi|letlhaodi|lerui|leamanyi|lesoboki|lebadi><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+    {<VP><NP><AdvM|AdvP|AdvT><Go_Complement>}
+	{<VP><AdvM|AdvP|AdvT><Go_Complement>}
+	{<VP><NP><Go_Complement>
+	{<VP><AdvM><AdvT>}
+	{<VP><AdvP><AdvT>}
+	{<VP><AdvM|AdvP|AdvT>}
+	{<CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L02><VP>}
+	{<L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
+    {<VP><L28|L01|CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+    {<VP><L28|L01|CC6><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi><letlhalosi>}
+    {<VP><NP|lerui|leemedi|lesupi|lebadi|leamanyi|lesoboki|lerui|letlhaodi|letlhalosi>}
+	{<VP><NP|lerui|leemedi|lesupi|lebadi|leamanyi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
+	{<VP><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|lesupi|leamanyi|lebadi|lesoboki|lerui|letlhaodi><letlhalosi>}
+NP:   {<NN>}
+      {<NP><CC6><NP>}
+	  {<C15><VRB>}   ***** remove
+	  {<C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+	  {<NP><leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+	  {<NP><lebadi><lerui|leamanyi|letlhaodi>}
+	  {<NP><lesoboki><lerui|leamanyi|letlhaodi>}
+	  {<NP><leamanyi><lerui|leamanyi|letlhaodi>}
+	  {<NP><letlhaodi><lerui|leamanyi|letlhaodi>}
+	  {<leemedi><lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+	  {<leemedi><lebadi><lerui|leamanyi|letlhaodi>}
+	  {<leemedi><lesoboki><lerui|leamanyi|letlhaodi>}
+	  {<leemedi><leamanyi><lerui|leamanyi|letlhaodi>}
+	  {<leemedi><letlhaodi><lerui|leamanyi|letlhaodi>}
+NP_ng: {<NN_ng>}
+	   {<NP_ng><lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+	   {<NP_ng><lebadi><lerui|leamanyi|letlhaodi>}
+	   {<NP_ng><lesoboki><lerui|leamanyi|letlhaodi>}
+	   {<NP_ng><leamanyi><lerui|leamanyi|letlhaodi>}
+	   {<NP_ng><letlhaodi><lerui|leamanyi|letlhaodi>}
+	  
+lebadi: {<CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L52>}
+        {<lebadi><CC6><lebadi>}	  
+leamanyi: {<CC5><CC5><VP_ng|NN|letlhaodi_tota>}
+          {<CC1><CC4><VP_ng|NN|letlhaodi_tota>}
+          {<CC3><CC3><VP_ng|NN|letlhaodi_tota>}
+          {<C14><C15><VP_ng|NN|letlhaodi_tota>}
+          {<C12><C13><VP_ng|NN|letlhaodi_tota>}
+          {<C11><C11><VP_ng|NN|letlhaodi_tota>}
+          {<CC4><CC4><VP_ng|NN|letlhaodi_tota>}
+          {<CC8><CC8><VP_ng|NN|letlhaodi_tota>}
+          {<CC9><C10><VP_ng|NN|letlhaodi_tota>}
+          {<CC6><CC6><VP_ng|NN|letlhaodi_tota>}
+          {<CC7><CC7><VP_ng|NN|letlhaodi_tota>}
+		  {<CC7><CC7><L01|L02|L03><VP_ng>}
+		  {<CC1><CC4><L01|L02|L03><VP_ng>}
+		  {<CC3><CC3><L01|L02|L03><VP_ng>}
+		  {<CC4><CC4><L01|L02|L03><VP_ng>}
+		  {<CC5><CC5><L01|L02|L03><VP_ng>}
+		  {<CC6><CC6><L01|L02|L03><VP_ng>}
+		  {<CC8><CC8><L01|L02|L03><VP_ng>}
+		  {<CC9><C10><L01|L02|L03><VP_ng>}
+		  {<C11><C11><L01|L02|L03><VP_ng>}
+		  {<C12><C13><L01|L02|L03><VP_ng>}
+		  {<C14><C15><L01|L02|L03><VP_ng>}
+		  
+		  {<CC1><CC4><VP_ng><CC7><VP>}
+		  {<CC1><CC4><VP_ng><CC7><L02><VP>}
+		  {<CC3><CC3><VP_ng><CC3><VP>}
+		  {<CC3><CC3><VP_ng><CC3><L02><VP>}
+		  {<CC4><CC4><VP_ng><CC4><VP>}
+		  {<CC4><CC4><VP_ng><CC4><L02><VP>}
+		  {<CC5><CC5><VP_ng><CC5><VP>}
+		  {<CC5><CC5><VP_ng><CC5><L02><VP>}
+		  {<CC6><CC6><VP_ng><CC6><VP>}
+		  {<CC6><CC6><VP_ng><CC6><L02><VP>}
+		  {<CC7><CC7><VP_ng><CC7><VP>}
+		  {<CC7><CC7><VP_ng><CC7><L02><VP>}
+		  {<CC8><CC8><VP_ng><CC8><VP>}
+		  {<CC8><CC8><VP_ng><CC8><L02><VP>}
+		  {<CC9><C10><VP_ng><C10><VP>}
+		  {<CC9><C10><VP_ng><C10><L02><VP>}
+		  {<C11><C11><VP_ng><C11><VP>}
+		  {<C11><C11><VP_ng><C11><L02><VP>}
+		  {<C12><C13><VP_ng><C13><VP>}
+		  {<C12><C13><VP_ng><C13><L02><VP>}
+		  {<C14><C15><VP_ng><C15><VP>}
+		  {<C14><C15><VP_ng><C15><L02><VP>}
+		  
+		  {<CC1><CC4><L02><L16><CC7><VP>}
+		  {<CC1><CC4><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC3><CC3><L02><L16><CC3><VP>}
+		  {<CC3><CC3><L02><L16><CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC4><CC4><L02><L16><CC4><VP>}
+		  {<CC4><CC4><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC5><CC5><L02><L16><CC7><VP>}
+		  {<CC5><CC5><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC6><CC6><L02><L16><CC7><VP>}
+		  {<CC6><CC6><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC7><CC7><L02><L16><CC7><VP>}
+		  {<CC7><CC7><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC8><CC8><L02><L16><CC7><VP>}
+		  {<CC8><CC8><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC9><C10><L02><L16><CC7><VP>}
+		  {<CC9><C10><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C11><C11><L02><L16><CC7><VP>}
+		  {<C11><C11><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C12><C13><L02><L16><CC7><VP>}
+		  {<C12><C13><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C14><C15><L02><L16><CC7><VP>}
+		  {<C14><C15><L02><L16><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  
+		  {<CC1><CC4><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC3><CC3><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC4><CC4><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC5><CC5><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC6><CC6><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC7><CC7><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC8><CC8><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC9><C10><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C11><C11><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C12><C13><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C14><C15><CC8><L15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  
+          {<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><NP><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><VP_ng>}
+		  
+		  {<CC7><CC7><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC1><CC4><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC3><CC3><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC4><CC4><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC5><CC5><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC6><CC6><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC8><CC8><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC9><C10><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C11><C11><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C12><C13><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C14><C15><L01|L02|L03><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  
+		  {<CC7><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC1><CC4><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC3><CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC4><CC4><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC5><CC5><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC6><CC6><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC8><CC8><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<CC9><C10><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C11><C11><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C12><C13><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  {<C14><C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP_ng>}
+		  
+		  {<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L02><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP_ng>}
+		  {<CC1><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C14><VP_ng>}
+		  {<CC1><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><C14><VP_ng>}
+		  {<CC1><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC3><VP_ng>}
+		  {<CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC3><VP_ng>}
+		  {<CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC4><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC4><VP_ng>}
+		  {<CC4><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC4><VP_ng>}
+		  {<CC4><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC5><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC5><VP_ng>}
+		  {<CC5><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC5><VP_ng>}
+		  {<CC5><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC6><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC6><VP_ng>}
+		  {<CC6><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC6><VP_ng>}
+		  {<CC6><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC7><VP_ng>}
+		  {<CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC7><VP_ng>}
+		  {<CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC8><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC8><VP_ng>}
+		  {<CC8><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><CC8><VP_ng>}
+		  {<CC8><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<CC9><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C10><VP_ng>}
+		  {<CC9><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><C10><VP_ng>}
+		  {<CC9><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<C11><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C11><VP_ng>}
+		  {<C11><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><C11><VP_ng>}
+		  {<C11><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<C12><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C13><VP_ng>}
+		  {<C12><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><C13><VP_ng>}
+		  {<C12><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  {<C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C15><VP_ng>}
+		  {<C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><C15><VP_ng>}
+		  {<C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L03><VP_ng>}
+		  
+		  {<CC1><CC4><CC8><L01><L10><CC7><VP>}
+		  {<CC1><CC4><CC8><L01><L10><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC3><CC3><CC8><L01><L10><CC3><VP>}
+		  {<CC3><CC3><CC8><L01><L10><CC3><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC4><CC4><CC8><L01><L10><L31><VP>}
+		  {<CC4><CC4><CC8><L01><L10><L31><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC5><CC5><CC8><L01><L10><L12><VP>}
+		  {<CC5><CC5><CC8><L01><L10><L12><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC6><CC6><CC8><L01><L10><L29><VP>}
+		  {<CC6><CC6><CC8><L01><L10><L29><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC7><CC7><CC8><L01><L10><CC7><VP>}
+		  {<CC7><CC7><CC8><L01><L10><CC7><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC8><CC8><CC8><L01><L10><L02><VP>}
+		  {<CC8><CC8><CC8><L01><L10><L02><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<CC9><C10><CC8><L01><L10><L22><VP>}
+		  {<CC9><C10><CC8><L01><L10><L22><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C11><C11><CC8><L01><L10><L32><VP>}
+		  {<C11><C11><CC8><L01><L10><L32><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C12><C13><CC8><L01><L10><L27><VP>}
+		  {<C12><C13><CC8><L01><L10><L27><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  {<C14><C15><CC8><L01><L10><L46><VP>}
+		  {<C14><C15><CC8><L01><L10><L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
+		  
+		  {<CC1><CC4><L02><L13><CC7><VP>}
+		  {<CC3><CC3><L02><L13><CC3><VP>}
+		  {<CC4><CC4><L02><L13><CC4><VP>}
+		  {<CC5><CC5><L02><L13><CC5><VP>}
+		  {<CC6><CC6><L02><L13><CC6><VP>}
+		  {<CC7><CC7><L02><L13><CC7><VP>}
+		  {<CC8><CC8><L02><L13><CC8><VP>}
+		  {<CC9><CC9><L02><L13><C10><VP>}
+		  {<C11><C11><L02><L13><C11><VP>}
+		  {<C12><C13><L02><L13><C13><VP>}
+		  {<C14><C15><L02><L13><C15><VP>}
+		  
+		  {<CC1><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><C14><VP>}
+		  {<CC3><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC3><VP>}
+		  {<CC4><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC4><VP>}
+		  {<CC5><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC5><VP>}
+		  {<CC6><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC6><VP>}
+		  {<CC7><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC7><VP>}
+		  {<CC8><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><CC8><VP>}
+		  {<CC9><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><C10><VP>}
+		  {<C11><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><C11><VP>}
+		  {<C12><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><C13><VP>}
+		  {<C14><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><L02><L13><CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><C15><VP>}
+		  
+		  {<CC1><CC4><L04><CC7><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC3><CC3><L04><CC3><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC4><CC4><L04><CC4><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC5><CC5><L04><CC5><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC6><CC6><L04><CC6><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC7><CC7><L04><CC7><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC8><CC8><L04><CC8><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC9><C10><L04><C10><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C11><C11><L04><C11><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C12><C13><L04><C13><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C14><C14><L04><C14><L20><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  
+		  {<CC1><CC4><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC3><CC3><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC4><CC4><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC5><CC5><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC6><CC6><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC7><CC7><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC8><CC8><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<CC9><C10><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C11><C11><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C12><C13><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+		  {<C14><C15><L03><L54><CC6><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi>}
+
+		  
+		  
+		  
+		  
+		  
+		  
+		  {<CC1><CC4><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC3><CC3><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC4><CC4><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC5><CC5><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC6><CC6><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC7><CC7><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC8><CC8><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC9><C10><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<C11><C11><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<C12><C13><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<C14><C15><L02><C14|CC4|CC3|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L39><VP_ng>}
+		  {<CC7><CC7><L04|L14|L17|L48|L47><CC7><VP>}
+		  {<CC1><CC4><L04|L14|L17|L48|L47><CC7><VP>}
+		  {<CC3><CC3><L04|L14|L17|L48|L47><CC3><VP>}
+		  {<CC4><CC4><L04|L14|L17|L48|L47><CC4><VP>}
+		  {<CC5><CC5><L04|L14|L17|L48|L47><CC5><VP>}
+		  {<CC6><CC6><L04|L14|L17|L48|L47><CC6><VP>}
+		  {<CC8><CC8><L04|L14|L17|L48|L47><CC8><VP>}
+		  {<CC9><C10><L04|L14|L17|L48|L47><C10><VP>}
+		  {<C11><C11><L04|L14|L17|L48|L47><C11><VP>}
+		  {<C12><C13><L04|L14|L17|L48|L47><C13><VP>}
+		  {<C14><C15><L04|L14|L17|L48|L47><C15><VP>}
+		  {<CC7><CC7><L04><CC7><L02><VP>}
+		  {<CC1><CC4><L04><CC7><L02><VP>}
+		  {<CC3><CC3><L04><CC3><L02><VP>}
+		  {<CC4><CC4><L04><CC4><L02><VP>}
+		  {<CC5><CC5><L04><CC5><L02><VP>}
+		  {<CC6><CC6><L04><CC6><L02><VP>}
+		  {<CC8><CC8><L04><CC8><L02><VP>}
+		  {<CC9><C10><L04><C10><L02><VP>}
+		  {<C11><C11><L04><C11><L02><VP>}
+		  {<C12><C13><L04><C13><L02><VP>}
+		  {<C14><C15><L04><C15><L02><VP>}
+		  {<CC1><L28><L04><L28><C14><VP>}
+		  {<CC1><CC3><L04><CC3><C14><VP>}
+		  {<CC1><CC4><L04><CC4><C14><VP>}
+		  {<CC1><CC5><L04><CC5><C14><VP>}
+		  {<CC1><CC6><L04><CC6><C14><VP>}
+		  {<CC1><CC7><L04><CC7><C14><VP>}
+		  {<CC1><CC8><L04><CC8><C14><VP>}
+		  {<CC1><C10><L04><C10><C14><VP>}
+		  {<CC1><C11><L04><C11><C14><VP>}
+		  {<CC1><C13><L04><C13><C14><VP>}
+		  {<CC1><C15><L04><C15><C14><VP>}
+		  {<CC1><L39><L04><L39><C14><VP>}
+		  
+		  {<CC3><L28><L04><L28><CC3><VP>}
+		  {<CC3><CC3><L04><CC3><CC3><VP>}
+		  {<CC3><CC4><L04><CC4><CC3><VP>}
+		  {<CC3><CC5><L04><CC5><CC3><VP>}
+		  {<CC3><CC6><L04><CC6><CC3><VP>}
+		  {<CC3><CC7><L04><CC7><CC3><VP>}
+		  {<CC3><CC8><L04><CC8><CC3><VP>}
+		  {<CC3><C10><L04><C10><CC3><VP>}
+		  {<CC3><C11><L04><C11><CC3><VP>}
+		  {<CC3><C13><L04><C13><CC3><VP>}
+		  {<CC3><C15><L04><C15><CC3><VP>}
+		  {<CC3><L39><L04><L39><CC3><VP>}
+		  
+		  {<CC4><L28><L04><L28><CC4><VP>}
+		  {<CC4><CC3><L04><CC3><CC4><VP>}
+		  {<CC4><CC4><L04><CC4><CC4><VP>}
+		  {<CC4><CC5><L04><CC5><CC4><VP>}
+		  {<CC4><CC6><L04><CC6><CC4><VP>}
+		  {<CC4><CC7><L04><CC7><CC4><VP>}
+		  {<CC4><CC8><L04><CC8><CC4><VP>}
+		  {<CC4><C10><L04><C10><CC4><VP>}
+		  {<CC4><C11><L04><C11><CC4><VP>}
+		  {<CC4><C13><L04><C13><CC4><VP>}
+		  {<CC4><C15><L04><C15><CC4><VP>}
+		  {<CC4><L39><L04><L39><CC4><VP>}
+		  
+		  {<CC5><L28><L04><L28><CC5><VP>}
+		  {<CC5><CC3><L04><CC3><CC5><VP>}
+		  {<CC5><CC4><L04><CC4><CC5><VP>}
+		  {<CC5><CC5><L04><CC5><CC5><VP>}
+		  {<CC5><CC6><L04><CC6><CC5><VP>}
+		  {<CC5><CC7><L04><CC7><CC5><VP>}
+		  {<CC5><CC8><L04><CC8><CC5><VP>}
+		  {<CC5><C10><L04><C10><CC5><VP>}
+		  {<CC5><C11><L04><C11><CC5><VP>}
+		  {<CC5><C13><L04><C13><CC5><VP>}
+		  {<CC5><C15><L04><C15><CC5><VP>}
+		  {<CC5><L39><L04><L39><CC5><VP>}
+		  
+		  {<CC6><L28><L04><L28><CC6><VP>}
+		  {<CC6><CC3><L04><CC3><CC6><VP>}
+		  {<CC6><CC4><L04><CC4><CC6><VP>}
+		  {<CC6><CC5><L04><CC5><CC6><VP>}
+		  {<CC6><CC6><L04><CC6><CC6><VP>}
+		  {<CC6><CC7><L04><CC7><CC6><VP>}
+		  {<CC6><CC8><L04><CC8><CC6><VP>}
+		  {<CC6><C10><L04><C10><CC6><VP>}
+		  {<CC6><C11><L04><C11><CC6><VP>}
+		  {<CC6><C13><L04><C13><CC6><VP>}
+		  {<CC6><C15><L04><C15><CC6><VP>}
+		  {<CC6><L39><L04><L39><CC6><VP>}
+		  
+		  {<CC7><L28><L04><L28><CC7><VP>}
+		  {<CC7><CC3><L04><CC3><CC7><VP>}
+		  {<CC7><CC4><L04><CC4><CC7><VP>}
+		  {<CC7><CC5><L04><CC5><CC7><VP>}
+		  {<CC7><CC6><L04><CC6><CC7><VP>}
+		  {<CC7><CC7><L04><CC7><CC7><VP>}
+		  {<CC7><CC8><L04><CC8><CC7><VP>}
+		  {<CC7><C10><L04><C10><CC7><VP>}
+		  {<CC7><C11><L04><C11><CC7><VP>}
+		  {<CC7><C13><L04><C13><CC7><VP>}
+		  {<CC7><C15><L04><C15><CC7><VP>}
+		  {<CC7><L39><L04><L39><CC7><VP>}
+		  
+		  {<CC8><L28><L04><L28><CC8><VP>}
+		  {<CC8><CC3><L04><CC3><CC8><VP>}
+		  {<CC8><CC4><L04><CC4><CC8><VP>}
+		  {<CC8><CC5><L04><CC5><CC8><VP>}
+		  {<CC8><CC6><L04><CC6><CC8><VP>}
+		  {<CC8><CC7><L04><CC7><CC8><VP>}
+		  {<CC8><CC8><L04><CC8><CC8><VP>}
+		  {<CC8><C10><L04><C10><CC8><VP>}
+		  {<CC8><C11><L04><C11><CC8><VP>}
+		  {<CC8><C13><L04><C13><CC8><VP>}
+		  {<CC8><C15><L04><C15><CC8><VP>}
+		  {<CC8><L39><L04><L39><CC8><VP>}
+		  
+		  {<CC9><L28><L04><L28><C10><VP>}
+		  {<CC9><CC3><L04><CC3><C10><VP>}
+		  {<CC9><CC4><L04><CC4><C10><VP>}
+		  {<CC9><CC5><L04><CC5><C10><VP>}
+		  {<CC9><CC6><L04><CC6><C10><VP>}
+		  {<CC9><CC7><L04><CC7><C10><VP>}
+		  {<CC9><CC8><L04><CC8><C10><VP>}
+		  {<CC9><C10><L04><C10><C10><VP>}
+		  {<CC9><C11><L04><C11><C10><VP>}
+		  {<CC9><C13><L04><C13><C10><VP>}
+		  {<CC9><C15><L04><C15><C10><VP>}
+		  {<CC9><L39><L04><L39><C10><VP>}
+		  
+		  {<C11><L28><L04><L28><C11><VP>}
+		  {<C11><CC3><L04><CC3><C11><VP>}
+		  {<C11><CC4><L04><CC4><C11><VP>}
+		  {<C11><CC5><L04><CC5><C11><VP>}
+		  {<C11><CC6><L04><CC6><C11><VP>}
+		  {<C11><CC7><L04><CC7><C11><VP>}
+		  {<C11><CC8><L04><CC8><C11><VP>}
+		  {<C11><C10><L04><C10><C11><VP>}
+		  {<C11><C11><L04><C11><C11><VP>}
+		  {<C11><C13><L04><C13><C11><VP>}
+		  {<C11><C15><L04><C15><C11><VP>}
+		  {<C11><L39><L04><L39><C11><VP>}
+		  
+		  {<C12><L28><L04><L28><C13><VP>}
+		  {<C12><CC3><L04><CC3><C13><VP>}
+		  {<C12><CC4><L04><CC4><C13><VP>}
+		  {<C12><CC5><L04><CC5><C13><VP>}
+		  {<C12><CC6><L04><CC6><C13><VP>}
+		  {<C12><CC7><L04><CC7><C13><VP>}
+		  {<C12><CC8><L04><CC8><C13><VP>}
+		  {<C12><C10><L04><C10><C13><VP>}
+		  {<C12><C11><L04><C11><C13><VP>}
+		  {<C12><C13><L04><C13><C13><VP>}
+		  {<C12><C15><L04><C15><C13><VP>}
+		  {<C12><L39><L04><L39><C13><VP>}
+		  
+		  {<C14><L28><L04><L28><C15><VP>}
+		  {<C14><CC3><L04><CC3><C15><VP>}
+		  {<C14><CC4><L04><CC4><C15><VP>}
+		  {<C14><CC5><L04><CC5><C15><VP>}
+		  {<C14><CC6><L04><CC6><C15><VP>}
+		  {<C14><CC7><L04><CC7><C15><VP>}
+		  {<C14><CC8><L04><CC8><C15><VP>}
+		  {<C14><C10><L04><C10><C15><VP>}
+		  {<C14><C11><L04><C11><C15><VP>}
+		  {<C14><C13><L04><C13><C15><VP>}
+		  {<C14><C15><L04><C15><C15><VP>}
+		  {<C14><L39><L04><L39><C15><VP>}
+		  
+		  {<CC1><CC4><CC7><L50><CC7><VP>}
+		  {<CC3><CC3><CC7><L50><CC3><VP>}
+		  {<CC4><CC4><CC7><L50><CC4><VP>}
+		  {<CC5><CC5><CC7><L50><CC5><VP>}
+		  {<CC6><CC6><CC7><L50><CC6><VP>}
+		  {<CC7><CC7><CC7><L50><CC7><VP>}
+		  {<CC8><CC8><CC7><L50><CC8><VP>}
+		  {<CC9><C10><CC7><L50><C10><VP>}
+		  {<C11><C11><CC7><L50><C11><VP>}
+		  {<C12><C13><CC7><L50><C13><VP>}
+		  {<C14><C15><CC7><L50><C15><VP>}
+		  
+		  {<CC1><CC4><L05><CC7><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC3><CC3><L05><CC3><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC4><CC4><L05><CC4><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC5><CC5><L05><CC5><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC6><CC6><L05><CC6><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC7><CC7><L05><CC7><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC8><CC8><L05><CC8><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<CC9><C10><L05><C10><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<C11><C11><L05><C11><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<C12><C13><L05><C13><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  {<C14><C15><L05><C15><L20><CC6><VP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
+		  
+		  {<CC1><CC4><L04><CC7><VP>}
+		  {<CC3><CC3><L04><CC3><VP>}
+		  {<CC4><CC4><L04><CC4><VP>}
+		  {<CC5><CC5><L04><CC5><VP>}
+		  {<CC6><CC6><L04><CC6><VP>}
+		  {<CC7><CC7><L04><CC7><VP>}
+		  {<CC8><CC8><L04><CC8><VP>}
+		  {<CC9><C10><L04><C10><VP>}
+		  {<C11><C11><L04><C11><VP>}
+		  {<C12><C13><L04><C13><VP>}
+		  {<C13><C14><L04><C14><VP>}
+		  
+		  
+		  
+		  {<CC1><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C14><VP>}
+		  {<CC3><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3><VP>}
+		  {<CC4><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC4><VP>}
+		  {<CC5><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC5><VP>}
+		  {<CC6><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC6><VP>}
+		  {<CC7><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><VP>}
+		  {<CC8><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC8><VP>}
+		  {<CC9><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C10><VP>}
+		  {<C11><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C11><VP>}
+		  {<C12><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C13><VP>}
+		  {<C14><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><L50><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C15><VP>}
+		  
+		  {<CC1><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L01><CC8><L10><|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C15><VP>}
+		  
+		  {<CC9><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C10><VP_ng>}
+		  {<CC3><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC3><VP_ng>}
+		  {<CC4><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC4><VP_ng>}
+		  {<CC5><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC5><VP_ng>}
+		  {<CC6><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC6><VP_ng>}
+		  {<CC7><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC7><VP_ng>}
+		  {<CC8><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC8><VP_ng>}
+		  {<C11><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C11><VP_ng>}
+		  {<C12><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C13><VP_ng>}
+		  {<C14><CC4|CC3|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><C15><VP_ng>}
+		  {<CC1><CC4><L36|L17|L14|L04|L05|L47><L31><C14><VP>}
+		  {<CC1><CC3><L36|L17|L14|L04|L05|L47><CC3><C14><VP>}
+		  {<CC1><L28><L36|L17|L14|L04|L05|L47><L01><C14><VP>}
+		  {<CC1><L39><L36|L17|L14|L04|L05|L47><L45><C14><VP>}
+		  {<CC1><CC5><L36|L17|L14|L04|L05|L47><L12><C14><VP>}
+		  {<CC1><CC6><L36|L17|L14|L04|L05|L47><L29><C14><VP>}
+		  {<CC1><CC7><L36|L17|L14|L04|L05|L47><CC7><C14><VP>}
+		  {<CC1><CC8><L36|L17|L14|L04|L05|L47><L02><C14><VP>}
+		  {<CC1><C10><L36|L17|L14|L04|L05|L47><L22><C14><VP>}
+		  {<CC1><C11><L36|L17|L14|L04|L05|L47><L32><C14><VP>}
+		  {<CC1><C13><L36|L17|L14|L04|L05|L47><L27><C14><VP>}
+		  {<CC1><C15><L36|L17|L14|L04|L05|L47><L46><C14><VP>}
+		  {<CC3><CC4><L36|L17|L14|L04|L05|L47><L31><CC3><VP>}
+		  {<CC3><CC3><L36|L17|L14|L04|L05|L47><CC3><CC3><VP>}
+		  {<CC3><L28><L36|L17|L14|L04|L05|L47><L01><CC3><VP>}
+		  {<CC3><L39><L36|L17|L14|L04|L05|L47><L45><CC3><VP>}
+		  {<CC3><CC5><L36|L17|L14|L04|L05|L47><L12><CC3><VP>}
+		  {<CC3><CC6><L36|L17|L14|L04|L05|L47><L29><CC3><VP>}
+		  {<CC3><CC7><L36|L17|L14|L04|L05|L47><CC7><CC3><VP>}
+		  {<CC3><CC8><L36|L17|L14|L04|L05|L47><L02><CC3><VP>}
+		  {<CC3><C10><L36|L17|L14|L04|L05|L47><L22><CC3><VP>}
+		  {<CC3><C11><L36|L17|L14|L04|L05|L47><L32><CC3><VP>}
+		  {<CC3><C13><L36|L17|L14|L04|L05|L47><L27><CC3><VP>}
+		  {<CC3><C15><L36|L17|L14|L04|L05|L47><L46><CC3><VP>}
+		  {<CC4><CC4><L36|L17|L14|L04|L05|L47><L31><CC4><VP>}
+		  {<CC4><CC3><L36|L17|L14|L04|L05|L47><CC3><CC4><VP>}
+		  {<CC4><L28><L36|L17|L14|L04|L05|L47><L01><CC4><VP>}
+		  {<CC4><L39><L36|L17|L14|L04|L05|L47><L45><CC4><VP>}
+		  {<CC4><CC5><L36|L17|L14|L04|L05|L47><L12><CC4><VP>}
+		  {<CC4><CC6><L36|L17|L14|L04|L05|L47><L29><CC4><VP>}
+		  {<CC4><CC7><L36|L17|L14|L04|L05|L47><CC7><CC4><VP>}
+		  {<CC4><CC8><L36|L17|L14|L04|L05|L47><L02><CC4><VP>}
+		  {<CC4><C10><L36|L17|L14|L04|L05|L47><L22><CC4><VP>}
+		  {<CC4><C11><L36|L17|L14|L04|L05|L47><L32><CC4><VP>}
+		  {<CC4><C13><L36|L17|L14|L04|L05|L47><L27><CC4><VP>}
+		  {<CC4><C15><L36|L17|L14|L04|L05|L47><L46><CC4><VP>}
+		  {<CC5><CC4><L36|L17|L14|L04|L05|L47><L31><CC5><VP>}
+		  {<CC5><CC3><L36|L17|L14|L04|L05|L47><CC3><CC5><VP>}
+		  {<CC5><L28><L36|L17|L14|L04|L05|L47><L01><CC5><VP>}
+		  {<CC5><L39><L36|L17|L14|L04|L05|L47><L45><CC5><VP>}
+		  {<CC5><CC5><L36|L17|L14|L04|L05|L47><L12><CC5><VP>}
+		  {<CC5><CC6><L36|L17|L14|L04|L05|L47><L29><CC5><VP>}
+		  {<CC5><CC7><L36|L17|L14|L04|L05|L47><CC7><CC5><VP>}
+		  {<CC5><CC8><L36|L17|L14|L04|L05|L47><L02><CC5><VP>}
+		  {<CC5><C10><L36|L17|L14|L04|L05|L47><L22><CC5><VP>}
+		  {<CC5><C11><L36|L17|L14|L04|L05|L47><L32><CC5><VP>}
+		  {<CC5><C13><L36|L17|L14|L04|L05|L47><L27><CC5><VP>}
+		  {<CC5><C15><L36|L17|L14|L04|L05|L47><L46><CC5><VP>}
+		  {<CC6><CC4><L36|L17|L14|L04|L05|L47><L31><CC6><VP>}
+		  {<CC6><CC3><L36|L17|L14|L04|L05|L47><CC3><CC6><VP>}
+		  {<CC6><L28><L36|L17|L14|L04|L05|L47><L01><CC6><VP>}
+		  {<CC6><L39><L36|L17|L14|L04|L05|L47><L45><CC6><VP>}
+		  {<CC6><CC5><L36|L17|L14|L04|L05|L47><L12><CC6><VP>}
+		  {<CC6><CC6><L36|L17|L14|L04|L05|L47><L29><CC6><VP>}
+		  {<CC6><CC7><L36|L17|L14|L04|L05|L47><CC7><CC6><VP>}
+		  {<CC6><CC8><L36|L17|L14|L04|L05|L47><L02><CC6><VP>}
+		  {<CC6><C10><L36|L17|L14|L04|L05|L47><L22><CC6><VP>}
+		  {<CC6><C11><L36|L17|L14|L04|L05|L47><L32><CC6><VP>}
+		  {<CC6><C13><L36|L17|L14|L04|L05|L47><L27><CC6><VP>}
+		  {<CC6><C15><L36|L17|L14|L04|L05|L47><L46><CC6><VP>}
+		  {<CC7><CC4><L36|L17|L14|L04|L05|L47><L31><CC7><VP>}
+		  {<CC7><CC3><L36|L17|L14|L04|L05|L47><CC3><CC7><VP>}
+		  {<CC7><L28><L36|L17|L14|L04|L05|L47><L01><CC7><VP>}
+		  {<CC7><L39><L36|L17|L14|L04|L05|L47><L45><CC7><VP>}
+		  {<CC7><CC5><L36|L17|L14|L04|L05|L47><L12><CC7><VP>}
+		  {<CC7><CC6><L36|L17|L14|L04|L05|L47><L29><CC7><VP>}
+		  {<CC7><CC7><L36|L17|L14|L04|L05|L47><CC7><CC7><VP>}
+		  {<CC7><CC8><L36|L17|L14|L04|L05|L47><L02><CC7><VP>}
+		  {<CC7><C10><L36|L17|L14|L04|L05|L47><L22><CC7><VP>}
+		  {<CC7><C11><L36|L17|L14|L04|L05|L47><L32><CC7><VP>}
+		  {<CC7><C13><L36|L17|L14|L04|L05|L47><L27><CC7><VP>}
+		  {<CC7><C15><L36|L17|L14|L04|L05|L47><L46><CC7><VP>}
+		  {<CC8><CC4><L36|L17|L14|L04|L05|L47><L31><CC8><VP>}
+		  {<CC8><CC3><L36|L17|L14|L04|L05|L47><CC3><CC8><VP>}
+		  {<CC8><L28><L36|L17|L14|L04|L05|L47><L01><CC8><VP>}
+		  {<CC8><L39><L36|L17|L14|L04|L05|L47><L45><CC8><VP>}
+		  {<CC8><CC5><L36|L17|L14|L04|L05|L47><L12><CC8><VP>}
+		  {<CC8><CC6><L36|L17|L14|L04|L05|L47><L29><CC8><VP>}
+		  {<CC8><CC7><L36|L17|L14|L04|L05|L47><CC7><CC8><VP>}
+		  {<CC8><CC8><L36|L17|L14|L04|L05|L47><L02><CC8><VP>}
+		  {<CC8><C10><L36|L17|L14|L04|L05|L47><L22><CC8><VP>}
+		  {<CC8><C11><L36|L17|L14|L04|L05|L47><L32><CC8><VP>}
+		  {<CC8><C13><L36|L17|L14|L04|L05|L47><L27><CC8><VP>}
+		  {<CC8><C15><L36|L17|L14|L04|L05|L47><L46><CC8><VP>}
+		  {<CC9><CC4><L36|L17|L14|L04|L05|L47><L31><C10><VP>}
+		  {<CC9><CC3><L36|L17|L14|L04|L05|L47><CC3><C10><VP>}
+		  {<CC9><L28><L36|L17|L14|L04|L05|L47><L01><C10><VP>}
+		  {<CC9><L39><L36|L17|L14|L04|L05|L47><L45><C10><VP>}
+		  {<CC9><CC5><L36|L17|L14|L04|L05|L47><L12><C10><VP>}
+		  {<CC9><CC6><L36|L17|L14|L04|L05|L47><L29><C10><VP>}
+		  {<CC9><CC7><L36|L17|L14|L04|L05|L47><CC7><C10><VP>}
+		  {<CC9><CC8><L36|L17|L14|L04|L05|L47><L02><C10><VP>}
+		  {<CC9><C10><L36|L17|L14|L04|L05|L47><L22><C10><VP>}
+		  {<CC9><C11><L36|L17|L14|L04|L05|L47><L32><C10><VP>}
+		  {<CC9><C13><L36|L17|L14|L04|L05|L47><L27><C10><VP>}
+		  {<CC9><C15><L36|L17|L14|L04|L05|L47><L46><C10><VP>}
+		  {<C11><CC4><L36|L17|L14|L04|L05|L47><L31><C11><VP>}
+		  {<C11><CC3><L36|L17|L14|L04|L05|L47><CC3><C11><VP>}
+		  {<C11><L28><L36|L17|L14|L04|L05|L47><L01><C11><VP>}
+		  {<C11><L39><L36|L17|L14|L04|L05|L47><L45><C11><VP>}
+		  {<C11><CC5><L36|L17|L14|L04|L05|L47><L12><C11><VP>}
+		  {<C11><CC6><L36|L17|L14|L04|L05|L47><L29><C11><VP>}
+		  {<C11><CC7><L36|L17|L14|L04|L05|L47><CC7><C11><VP>}
+		  {<C11><CC8><L36|L17|L14|L04|L05|L47><L02><C11><VP>}
+		  {<C11><C10><L36|L17|L14|L04|L05|L47><L22><C11><VP>}
+		  {<C11><C11><L36|L17|L14|L04|L05|L47><L32><C11><VP>}
+		  {<C11><C13><L36|L17|L14|L04|L05|L47><L27><C11><VP>}
+		  {<C11><C15><L36|L17|L14|L04|L05|L47><L46><C11><VP>}
+		  {<C12><CC4><L36|L17|L14|L04|L05|L47><L31><C13><VP>}
+		  {<C12><CC3><L36|L17|L14|L04|L05|L47><CC3><C13><VP>}
+		  {<C12><L28><L36|L17|L14|L04|L05|L47><L01><C13><VP>}
+		  {<C12><L39><L36|L17|L14|L04|L05|L47><L45><C13><VP>}
+		  {<C12><CC5><L36|L17|L14|L04|L05|L47><L12><C13><VP>}
+		  {<C12><CC6><L36|L17|L14|L04|L05|L47><L29><C13><VP>}
+		  {<C12><CC7><L36|L17|L14|L04|L05|L47><CC7><C13><VP>}
+		  {<C12><CC8><L36|L17|L14|L04|L05|L47><L02><C13><VP>}
+		  {<C12><C10><L36|L17|L14|L04|L05|L47><L22><C13><VP>}
+		  {<C12><C11><L36|L17|L14|L04|L05|L47><L32><C13><VP>}
+		  {<C12><C13><L36|L17|L14|L04|L05|L47><L27><C13><VP>}
+		  {<C12><C15><L36|L17|L14|L04|L05|L47><L46><C13><VP>}
+		  {<C14><CC4><L36|L17|L14|L04|L05|L47><L31><C15><VP>}
+		  {<C14><CC3><L36|L17|L14|L04|L05|L47><CC3><C15><VP>}
+		  {<C14><L28><L36|L17|L14|L04|L05|L47><L01><C15><VP>}
+		  {<C14><L39><L36|L17|L14|L04|L05|L47><L45><C15><VP>}
+		  {<C14><CC5><L36|L17|L14|L04|L05|L47><L12><C15><VP>}
+		  {<C14><CC6><L36|L17|L14|L04|L05|L47><L29><C15><VP>}
+		  {<C14><CC7><L36|L17|L14|L04|L05|L47><CC7><C15><VP>}
+		  {<C14><CC8><L36|L17|L14|L04|L05|L47><L02><C15><VP>}
+		  {<C14><C10><L36|L17|L14|L04|L05|L47><L22><C15><VP>}
+		  {<C14><C11><L36|L17|L14|L04|L05|L47><L32><C15><VP>}
+		  {<C14><C13><L36|L17|L14|L04|L05|L47><L27><C15><VP>}
+		  {<C14><C15><L36|L17|L14|L04|L05|L47><L46><C15><VP>}
+		  {<CC1><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C14><VP_ng>}
+		  {<CC3><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3><VP_ng>}
+		  {<CC4><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC4><VP_ng>}
+		  {<CC5><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC5><VP_ng>}
+		  {<CC6><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC6><VP_ng>}
+		  {<CC7><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC7><VP_ng>}
+		  {<CC8><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC8><VP_ng>}
+		  {<CC9><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C10><VP_ng>}
+		  {<C11><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C11><VP_ng>}
+		  {<C12><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C13><VP_ng>}
+		  {<C14><L39|L28|CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><C15><VP_ng>}
+		  
+		  {<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L01|L03><L06><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP><L01><leemedi>}
+		  {<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L01|L03><L06><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP><CC7|CC3|CC4|CC5|CC6|CC8|C10|C11|C13|C15><VP>}
+		  
+		  {<CC1><L28><L01><CC8><L10><L01><VP>}
+		  {<CC1><L39><L01><CC8><L10><L45><VP>}
+		  {<CC1><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC1><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC1><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC1><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC1><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC1><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC1><C10><L01><CC8><L10><L22><VP>}
+		  {<CC1><C11><L01><CC8><L10><L32><VP>}
+		  {<CC1><C13><L01><CC8><L10><L27><VP>}
+		  {<CC1><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC3><L28><L01><CC8><L10><L01><VP>}
+		  {<CC3><L39><L01><CC8><L10><L45><VP>}
+		  {<CC3><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC3><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC3><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC3><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC3><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC3><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC3><C10><L01><CC8><L10><L22><VP>}
+		  {<CC3><C11><L01><CC8><L10><L32><VP>}
+		  {<CC3><C13><L01><CC8><L10><L27><VP>}
+		  {<CC3><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC4><L28><L01><CC8><L10><L01><VP>}
+		  {<CC4><L39><L01><CC8><L10><L45><VP>}
+		  {<CC4><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC4><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC4><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC4><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC4><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC4><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC4><C10><L01><CC8><L10><L22><VP>}
+		  {<CC4><C11><L01><CC8><L10><L32><VP>}
+		  {<CC4><C13><L01><CC8><L10><L27><VP>}
+		  {<CC4><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC5><L28><L01><CC8><L10><L01><VP>}
+		  {<CC5><L39><L01><CC8><L10><L45><VP>}
+		  {<CC5><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC5><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC5><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC5><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC5><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC5><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC5><C10><L01><CC8><L10><L22><VP>}
+		  {<CC5><C11><L01><CC8><L10><L32><VP>}
+		  {<CC5><C13><L01><CC8><L10><L27><VP>}
+		  {<CC5><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC6><L28><L01><CC8><L10><L01><VP>}
+		  {<CC6><L39><L01><CC8><L10><L45><VP>}
+		  {<CC6><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC6><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC6><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC6><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC6><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC6><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC6><C10><L01><CC8><L10><L22><VP>}
+		  {<CC6><C11><L01><CC8><L10><L32><VP>}
+		  {<CC6><C13><L01><CC8><L10><L27><VP>}
+		  {<CC6><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC7><L28><L01><CC8><L10><L01><VP>}
+		  {<CC7><L39><L01><CC8><L10><L45><VP>}
+		  {<CC7><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC7><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC7><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC7><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC7><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC7><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC7><C10><L01><CC8><L10><L22><VP>}
+		  {<CC7><C11><L01><CC8><L10><L32><VP>}
+		  {<CC7><C13><L01><CC8><L10><L27><VP>}
+		  {<CC7><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC8><L28><L01><CC8><L10><L01><VP>}
+		  {<CC8><L39><L01><CC8><L10><L45><VP>}
+		  {<CC8><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC8><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC8><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC8><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC8><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC8><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC8><C10><L01><CC8><L10><L22><VP>}
+		  {<CC8><C11><L01><CC8><L10><L32><VP>}
+		  {<CC8><C13><L01><CC8><L10><L27><VP>}
+		  {<CC8><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<CC9><L28><L01><CC8><L10><L01><VP>}
+		  {<CC9><L39><L01><CC8><L10><L45><VP>}
+		  {<CC9><CC3><L01><CC8><L10><CC3><VP>}
+		  {<CC9><CC4><L01><CC8><L10><L31><VP>}
+		  {<CC9><CC5><L01><CC8><L10><L12><VP>}
+		  {<CC9><CC6><L01><CC8><L10><L29><VP>}
+		  {<CC9><CC7><L01><CC8><L10><CC7><VP>}
+		  {<CC9><CC8><L01><CC8><L10><L02><VP>}
+		  {<CC9><C10><L01><CC8><L10><L22><VP>}
+		  {<CC9><C11><L01><CC8><L10><L32><VP>}
+		  {<CC9><C13><L01><CC8><L10><L27><VP>}
+		  {<CC9><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<C11><L28><L01><CC8><L10><L01><VP>}
+		  {<C11><L39><L01><CC8><L10><L45><VP>}
+		  {<C11><CC3><L01><CC8><L10><CC3><VP>}
+		  {<C11><CC4><L01><CC8><L10><L31><VP>}
+		  {<C11><CC5><L01><CC8><L10><L12><VP>}
+		  {<C11><CC6><L01><CC8><L10><L29><VP>}
+		  {<C11><CC7><L01><CC8><L10><CC7><VP>}
+		  {<C11><CC8><L01><CC8><L10><L02><VP>}
+		  {<C11><C10><L01><CC8><L10><L22><VP>}
+		  {<C11><C11><L01><CC8><L10><L32><VP>}
+		  {<C11><C13><L01><CC8><L10><L27><VP>}
+		  {<C11><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<C12><L28><L01><CC8><L10><L01><VP>}
+		  {<C12><L39><L01><CC8><L10><L45><VP>}
+		  {<C12><CC3><L01><CC8><L10><CC3><VP>}
+		  {<C12><CC4><L01><CC8><L10><L31><VP>}
+		  {<C12><CC5><L01><CC8><L10><L12><VP>}
+		  {<C12><CC6><L01><CC8><L10><L29><VP>}
+		  {<C12><CC7><L01><CC8><L10><CC7><VP>}
+		  {<C12><CC8><L01><CC8><L10><L02><VP>}
+		  {<C12><C10><L01><CC8><L10><L22><VP>}
+		  {<C12><C11><L01><CC8><L10><L32><VP>}
+		  {<C12><C13><L01><CC8><L10><L27><VP>}
+		  {<C12><C15><L01><CC8><L10><L53><VP>}
+		  
+		  {<C14><L28><L01><CC8><L10><L01><VP>}
+		  {<C14><L39><L01><CC8><L10><L45><VP>}
+		  {<C14><CC3><L01><CC8><L10><CC3><VP>}
+		  {<C14><CC4><L01><CC8><L10><L31><VP>}
+		  {<C14><CC5><L01><CC8><L10><L12><VP>}
+		  {<C14><CC6><L01><CC8><L10><L29><VP>}
+		  {<C14><CC7><L01><CC8><L10><CC7><VP>}
+		  {<C14><CC8><L01><CC8><L10><L02><VP>}
+		  {<C14><C10><L01><CC8><L10><L22><VP>}
+		  {<C14><C11><L01><CC8><L10><L32><VP>}
+		  {<C14><C13><L01><CC8><L10><L27><VP>}
+		  {<C14><C15><L01><CC8><L10><L53><VP>}
+		  
+		    
+		  
+		  {<CC1><L28><L01><CC8><L10><L01><C14><VP>}
+		  {<CC1><L39><L01><CC8><L10><L45><C14><VP>}
+		  {<CC1><CC3><L01><CC8><L10><CC3><C14><VP>}
+		  {<CC1><CC4><L01><CC8><L10><L31><C14><VP>}
+		  {<CC1><CC5><L01><CC8><L10><L12><C14><VP>}
+		  {<CC1><CC6><L01><CC8><L10><L29><C14><VP>}
+		  {<CC1><CC7><L01><CC8><L10><CC7><C14><VP>}
+		  {<CC1><CC8><L01><CC8><L10><L02><C14><VP>}
+		  {<CC1><C10><L01><CC8><L10><L22><C14><VP>}
+		  {<CC1><C11><L01><CC8><L10><L32><C14><VP>}
+		  {<CC1><C13><L01><CC8><L10><L27><C14><VP>}
+		  {<CC1><C15><L01><CC8><L10><L53><C14><VP>}
+		  
+		  {<CC3><L28><L01><CC8><L10><L01><CC3><VP>}
+		  {<CC3><L39><L01><CC8><L10><L45><CC3><VP>}
+		  {<CC3><CC3><L01><CC8><L10><CC3><CC3><VP>}
+		  {<CC3><CC4><L01><CC8><L10><L31><CC3><VP>}
+		  {<CC3><CC5><L01><CC8><L10><L12><CC3><VP>}
+		  {<CC3><CC6><L01><CC8><L10><L29><CC3><VP>}
+		  {<CC3><CC7><L01><CC8><L10><CC7><CC3><VP>}
+		  {<CC3><CC8><L01><CC8><L10><L02><CC3><VP>}
+		  {<CC3><C10><L01><CC8><L10><L22><CC3><VP>}
+		  {<CC3><C11><L01><CC8><L10><L32><CC3><VP>}
+		  {<CC3><C13><L01><CC8><L10><L27><CC3><VP>}
+		  {<CC3><C15><L01><CC8><L10><L53><CC3><VP>}
+		  
+		  {<CC4><L28><L01><CC8><L10><L01><CC4><VP>}
+		  {<CC4><L39><L01><CC8><L10><L45><CC4><VP>}
+		  {<CC4><CC3><L01><CC8><L10><CC3><CC4><VP>}
+		  {<CC4><CC4><L01><CC8><L10><L31><CC4><VP>}
+		  {<CC4><CC5><L01><CC8><L10><L12><CC4><VP>}
+		  {<CC4><CC6><L01><CC8><L10><L29><CC4><VP>}
+		  {<CC4><CC7><L01><CC8><L10><CC7><CC4><VP>}
+		  {<CC4><CC8><L01><CC8><L10><L02><CC4><VP>}
+		  {<CC4><C10><L01><CC8><L10><L22><CC4><VP>}
+		  {<CC4><C11><L01><CC8><L10><L32><CC4><VP>}
+		  {<CC4><C13><L01><CC8><L10><L27><CC4><VP>}
+		  {<CC4><C15><L01><CC8><L10><L53><CC4><VP>}
+		  
+		  {<CC5><L28><L01><CC8><L10><L01><CC5><VP>}
+		  {<CC5><L39><L01><CC8><L10><L45><CC5><VP>}
+		  {<CC5><CC3><L01><CC8><L10><CC3><CC5><VP>}
+		  {<CC5><CC4><L01><CC8><L10><L31><CC5><VP>}
+		  {<CC5><CC5><L01><CC8><L10><L12><CC5><VP>}
+		  {<CC5><CC6><L01><CC8><L10><L29><CC5><VP>}
+		  {<CC5><CC7><L01><CC8><L10><CC7><CC5><VP>}
+		  {<CC5><CC8><L01><CC8><L10><L02><CC5><VP>}
+		  {<CC5><C10><L01><CC8><L10><L22><CC5><VP>}
+		  {<CC5><C11><L01><CC8><L10><L32><CC5><VP>}
+		  {<CC5><C13><L01><CC8><L10><L27><CC5><VP>}
+		  {<CC5><C15><L01><CC8><L10><L53><CC5><VP>}
+		  
+		  {<CC6><L28><L01><CC8><L10><L01><CC6><VP>}
+		  {<CC6><L39><L01><CC8><L10><L45><CC6><VP>}
+		  {<CC6><CC3><L01><CC8><L10><CC3><CC6><VP>}
+		  {<CC6><CC4><L01><CC8><L10><L31><CC6><VP>}
+		  {<CC6><CC5><L01><CC8><L10><L12><CC6><VP>}
+		  {<CC6><CC6><L01><CC8><L10><L29><CC6><VP>}
+		  {<CC6><CC7><L01><CC8><L10><CC7><CC6><VP>}
+		  {<CC6><CC8><L01><CC8><L10><L02><CC6><VP>}
+		  {<CC6><C10><L01><CC8><L10><L22><CC6><VP>}
+		  {<CC6><C11><L01><CC8><L10><L32><CC6><VP>}
+		  {<CC6><C13><L01><CC8><L10><L27><CC6><VP>}
+		  {<CC6><C15><L01><CC8><L10><L53><CC6><VP>}
+		  
+		  {<CC7><L28><L01><CC8><L10><L01><CC7><VP>}
+		  {<CC7><L39><L01><CC8><L10><L45><CC7><VP>}
+		  {<CC7><CC3><L01><CC8><L10><CC3><CC7><VP>}
+		  {<CC7><CC4><L01><CC8><L10><L31><CC7><VP>}
+		  {<CC7><CC5><L01><CC8><L10><L12><CC7><VP>}
+		  {<CC7><CC6><L01><CC8><L10><L29><CC7><VP>}
+		  {<CC7><CC7><L01><CC8><L10><CC7><CC7><VP>}
+		  {<CC7><CC8><L01><CC8><L10><L02><CC7><VP>}
+		  {<CC7><C10><L01><CC8><L10><L22><CC7><VP>}
+		  {<CC7><C11><L01><CC8><L10><L32><CC7><VP>}
+		  {<CC7><C13><L01><CC8><L10><L27><CC7><VP>}
+		  {<CC7><C15><L01><CC8><L10><L53><CC7><VP>}
+		  
+		  {<CC8><L28><L01><CC8><L10><L01><CC8><VP>}
+		  {<CC8><L39><L01><CC8><L10><L45><CC8><VP>}
+		  {<CC8><CC3><L01><CC8><L10><CC3><CC8><VP>}
+		  {<CC8><CC4><L01><CC8><L10><L31><CC8><VP>}
+		  {<CC8><CC5><L01><CC8><L10><L12><CC8><VP>}
+		  {<CC8><CC6><L01><CC8><L10><L29><CC8><VP>}
+		  {<CC8><CC7><L01><CC8><L10><CC7><CC8><VP>}
+		  {<CC8><CC8><L01><CC8><L10><L02><CC8><VP>}
+		  {<CC8><C10><L01><CC8><L10><L22><CC8><VP>}
+		  {<CC8><C11><L01><CC8><L10><L32><CC8><VP>}
+		  {<CC8><C13><L01><CC8><L10><L27><CC8><VP>}
+		  {<CC8><C15><L01><CC8><L10><L53><CC8><VP>}
+		  
+		  {<CC9><L28><L01><CC8><L10><L01><C10><VP>}
+		  {<CC9><L39><L01><CC8><L10><L45><C10><VP>}
+		  {<CC9><CC3><L01><CC8><L10><CC3><C10><VP>}
+		  {<CC9><CC4><L01><CC8><L10><L31><C10><VP>}
+		  {<CC9><CC5><L01><CC8><L10><L12><C10><VP>}
+		  {<CC9><CC6><L01><CC8><L10><L29><C10><VP>}
+		  {<CC9><CC7><L01><CC8><L10><CC7><C10><VP>}
+		  {<CC9><CC8><L01><CC8><L10><L02><C10><VP>}
+		  {<CC9><C10><L01><CC8><L10><L22><C10><VP>}
+		  {<CC9><C11><L01><CC8><L10><L32><C10><VP>}
+		  {<CC9><C13><L01><CC8><L10><L27><C10><VP>}
+		  {<CC9><C15><L01><CC8><L10><L53><C10><VP>}
+		  
+		  {<C11><L28><L01><CC8><L10><L01><C11><VP>}
+		  {<C11><L39><L01><CC8><L10><L45><C11><VP>}
+		  {<C11><CC3><L01><CC8><L10><CC3><C11><VP>}
+		  {<C11><CC4><L01><CC8><L10><L31><C11><VP>}
+		  {<C11><CC5><L01><CC8><L10><L12><C11><VP>}
+		  {<C11><CC6><L01><CC8><L10><L29><C11><VP>}
+		  {<C11><CC7><L01><CC8><L10><CC7><C11><VP>}
+		  {<C11><CC8><L01><CC8><L10><L02><C11><VP>}
+		  {<C11><C10><L01><CC8><L10><L22><C11><VP>}
+		  {<C11><C11><L01><CC8><L10><L32><C11><VP>}
+		  {<C11><C13><L01><CC8><L10><L27><C11><VP>}
+		  {<C11><C15><L01><CC8><L10><L53><C11><VP>}
+		  
+		  {<C12><L28><L01><CC8><L10><L01><C13><VP>}
+		  {<C12><L39><L01><CC8><L10><L45><C13><VP>}
+		  {<C12><CC3><L01><CC8><L10><CC3><C13><VP>}
+		  {<C12><CC4><L01><CC8><L10><L31><C13><VP>}
+		  {<C12><CC5><L01><CC8><L10><L12><C13><VP>}
+		  {<C12><CC6><L01><CC8><L10><L29><C13><VP>}
+		  {<C12><CC7><L01><CC8><L10><CC7><C13><VP>}
+		  {<C12><CC8><L01><CC8><L10><L02><C13><VP>}
+		  {<C12><C10><L01><CC8><L10><L22><C13><VP>}
+		  {<C12><C11><L01><CC8><L10><L32><C13><VP>}
+		  {<C12><C13><L01><CC8><L10><L27><C13><VP>}
+		  {<C12><C15><L01><CC8><L10><L53><C13><VP>}
+		  
+		  {<C14><L28><L01><CC8><L10><L01><C15><VP>}
+		  {<C14><L39><L01><CC8><L10><L45><C15><VP>}
+		  {<C14><CC3><L01><CC8><L10><CC3><C15><VP>}
+		  {<C14><CC4><L01><CC8><L10><L31><C15><VP>}
+		  {<C14><CC5><L01><CC8><L10><L12><C15><VP>}
+		  {<C14><CC6><L01><CC8><L10><L29><C15><VP>}
+		  {<C14><CC7><L01><CC8><L10><CC7><C15><VP>}
+		  {<C14><CC8><L01><CC8><L10><L02><C15><VP>}
+		  {<C14><C10><L01><CC8><L10><L22><C15><VP>}
+		  {<C14><C11><L01><CC8><L10><L32><C15><VP>}
+		  {<C14><C13><L01><CC8><L10><L27><C15><VP>}
+		  {<C14><C15><L01><CC8><L10><L53><C15><VP>}
+		  
+		  {<CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14><C15><VP_ng><leemedi>}
+
+
+*******************************************************************************************
+Verb Prefixes
+ke ja
+ke a ja
+ke jele
+ke tla ja
+ke e ja
+ke a e ja
+ke e jele
+ke tla e ja
+ga ke je
+ke sa je
+ga ke a ja
+ga ke na go ja
+ga ke kitla ke ja
+ga kena go e ja
+ga ke kitla ke e ja
+se sa e je
+ga ke a e ja
+ga ke e je
+ke sa e je
+ke ne ke ja
+ke ne ke e ja
+ke ne ke sa e je
+ke ne ke sa je
+ke ne ke tla ja
+ke ne ke tla e ja
+ke ne ke sa tle go e ja
+ke ne ke se kitla ke e ja
+ke ne ke sa tle go ja
+ke ne ke se kitla ke ja
+ga ke ne ke ja
+ga ke ne ke e ja
+ga ke ka ke ka ja
+ga ke ka ke ka e ja
+
+ke ne ka ja
+ke ne ka se ke ka ja
+ke ne ka e ja
+ke ne ka se ke ka e ja
+ke ntse ke ja
+ke ntse ke e ja
+ke ntse ke sa je
+ke ntse ke sa e je
+ke sa ntse ke ja
+ke sa ntse ke e ja
+ke sa ntse ke sa je
+ke sa ntse ke sa e je
+ke ne ke ntse ke ja
+ke ne ke ntse ke sa je
+ke ne ke ntse ke e ja
+ke ne ke ntse ke sa e je
+ke ne ke tlile go ja
+ke ne ke tlile go e ja
+ke ne ke sa tle go ja
+ke ne ke sa tle go e ja
+ke ne ke se ka ke ka ja
+ke ne ke se ka ke ka e ja
+ke ne ke se kitla ke ja
+ke ne ke se kitla ke e ja
+
+ga ke ne ke ja
+ga ke ne ke e ja
+** ga e a tsala *** the "a" is fixed ****e tsetse *** 
+** ke tla bo ke kgweetsa *** <CC3..L28|L39><L03><C13><CC3..L28|L39><VP>
+***  o o neng o tla sireletsa; leamanyi  **** o o neng o sa tle (go sireletsa) ***
+*** o o neng o se na NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi***
+*** o o neng o tla nna le NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi ***
+*** o o neng o se kitla o nna le NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi ****
+*** le fa a ne a se na NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi ** le fa + verb clause
+O ka bo o se na kwa o ka bonang dikarabo tse di kgotsofatsang ka Modimo
+Ruri ba ne ba le setlhogo ***** CS + NE + SC + LE adjective (bakima,batelele,setlhogo,motlhofo etc *******************
+ e tla e na le philo (SC TENSE SC VERB)
+ fa e ntse e tla e bega e bua ka ******
+ 
