@@ -1,7 +1,7 @@
 """
 ============================================================
   SETSWANA CONSTITUENCY PARSER
-  Uses: definitions.txt + Parsing_rules_testing.txt
+  Uses: definitions.txt + Parsing Regex.txt
   Library: NLTK RegexpParser
 ============================================================
 """
@@ -63,7 +63,7 @@ def load_definitions(filepath):
 
 def load_rules(filepath):
     """
-    Reads Parsing_rules_testing.txt and extracts valid
+    Reads Parsing Regex.txt and extracts valid
     NLTK RegexpParser grammar rules.
 
     Rules look like:
@@ -307,7 +307,7 @@ def main():
     
     # Build full paths from that folder
     DEFINITIONS_FILE = os.path.join(BASE_DIR, 'definitions.txt')
-    RULES_FILE       = os.path.join(BASE_DIR, 'Parsing rules testing.txt')
+    RULES_FILE       = os.path.join(BASE_DIR, 'Parsing Regex.txt')
     
     print("\n" + "=" * 65)
     print("    SETSWANA CONSTITUENCY PARSER")
