@@ -9,7 +9,7 @@
  
 import sys
 import os
-sys.path.insert(0, '/home/claude')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
  
 from setswana_parser import (
     load_definitions,
@@ -23,7 +23,7 @@ from tabulate import tabulate
 # FILE PATHS — update these if your files are elsewhere
 # ─────────────────────────────────────────────────────────
 DEFINITIONS_FILE = "definitions.txt"
-RULES_FILE       = "Parsing rules testing.txt"
+RULES_FILE       = "Parsing Regex.txt"
  
 # ─────────────────────────────────────────────────────────
 # COLOURS FOR TERMINAL OUTPUT
@@ -76,7 +76,7 @@ print("\n⏳ Loading files...\n")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFINITIONS_FILE = os.path.join(BASE_DIR, 'definitions.txt')
-RULES_FILE = os.path.join(BASE_DIR, 'Parsing rules testing.txt')
+RULES_FILE = os.path.join(BASE_DIR, 'Parsing Regex.txt')
  
 word_to_tag = load_definitions(DEFINITIONS_FILE)
 grammar     = build_grammar_string(RULES_FILE)
