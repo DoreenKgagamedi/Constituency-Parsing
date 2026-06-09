@@ -3,8 +3,6 @@ CLAUSE: {<NP><VP>}
 FA_GORE_CLAUSE: {<L25|CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><VP>}
 FA_GORE_CLAUSE: {<L25|CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L20><CC6><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
 FA_GORE_CLAUSE: {<L25|CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><L20><CC6><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
- o supile fa ba gateletswe (fa ba gateletswe is complementing supile and is part of VP)
- ba robale fa ba gateletswe (fa ba gateletse temporal adverbial clause and not part of VP)
 
 
 GORE(THAT)
@@ -15,7 +13,7 @@ Complemetizer: {<CC2><L44><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|
 Complemetizer: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>}
 Complemetizer: {<CC2><NP><CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L03><VP>}
 Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L03><VP>}
-Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L61><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>
+Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><L61><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP>}
 Complemetizer: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
 Complemetizer: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L61><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
 Complemetizer: {<CC2><Leemedi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><L61><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><VP>}
@@ -30,7 +28,7 @@ Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|
 Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
 Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><L62><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
 Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
-Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>
+Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
 Adv_CL: {<CC2><VP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
 Adv_CL: {<CC2><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><VP>}
 Adv_CL: {<CC2><NP><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15><CC8><L01><CC3|CC7|L01|L02|L12|L22|L27|L29|L31|L32|L45|L46><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><VP>}
@@ -55,7 +53,7 @@ re ne ra emisa go huba maoto (object)
 
 FA(WHEN,IF,THAT)
 
-KA GORE (becaue,by saying (ka go re),about,by )
+KA GORE (because,by saying (ka go re),about,by )
 
 lerui:  {<CC3|L12|L31|L29|L44|L27|L22|L02|CC7><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
 lerui:  {<CC3|L12|L31|L29|L44|L27|L22|L02|CC7><CC2><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C14|C15|L39>}
@@ -72,7 +70,7 @@ Adv_Reason:	{<L01><CC2><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC1
 Adv_Reason:	{<L01><CC2><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><L44><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
 Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC8><letlhaodi>}
 Adv_Reason: {<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC8><letlhaodi>}
-Adv_Reason: {<L01><CC2>
+Adv_Reason: {<L01><CC2>}
 Adv_Reason: {<L01><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
 Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><VP>}
 Adv_Reason: {<L01><CC3|CC1|CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15|L28|L39><CC3|CC4|CC5|CC6|CC7|CC8|CC9|C11|C12|C14|CC15><VP>}
@@ -194,8 +192,8 @@ AdvP:{<C14><C15><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaod
 	 {<L24|L25><NP|lerui|leemedi|leamanyi|lesupi|lebadi|lesoboki|lerui|letlhaodi><CC3|CC4|CC5|CC6|CC7|CC8|C10|C11|C13|C15|L28|L39><VP_ng>}
 	 
 	 
-VP_ng: (<VRB_ng>}
-       {<VP_ng><NP>
+VP_ng: {<VRB_ng>}
+       {<VP_ng><NP>}
 	   {<VP_ng><NP|leemedi|lesupi|letlhaodi|lerui|leamanyi|lesoboki|lebadi><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
        {<VP_ng><AdvM><AdvT>}
 	   {<VP_ng><AdvP><AdvT>}
@@ -205,13 +203,14 @@ VP_ng: (<VRB_ng>}
        {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
 	   {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|letlhalosi>}
 	   {<VP_ng><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><NP|lerui|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi><letlhalosi>}
-VP: (<VRB>}
+VP: {<VRB>}
+    {<CC7><VRB_ng>}
     {<VP><NP>}
 	{<VP><Go_Complement>}
 	{<VP><NP|leemedi|lesupi|letlhaodi|lerui|leamanyi|lesoboki|lebadi><NP|leemedi|lesupi|lebadi|lesoboki|lerui|letlhaodi|leamanyi>}
     {<VP><NP><AdvM|AdvP|AdvT><Go_Complement>}
 	{<VP><AdvM|AdvP|AdvT><Go_Complement>}
-	{<VP><NP><Go_Complement>
+	{<VP><NP><Go_Complement>}
 	{<VP><AdvM><AdvT>}
 	{<VP><AdvP><AdvT>}
 	{<VP><AdvM|AdvP|AdvT>}
