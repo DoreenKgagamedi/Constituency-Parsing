@@ -1,9 +1,33 @@
 # Constituency-Parsing
 # Setswana Constituency Parser
 
-A rule-based Natural Language Processing (NLP) system that performs **constituency parsing** on Setswana sentences. The parser identifies grammatical constituents — such as Nouns (Lerui), Verbs (Leamanyi), Adjectives (Lebadi), and Adverbs (Letlhaodi) — and builds a hierarchical parse tree showing the syntactic structure of each sentence.
+The Setswana Constituency Parser is a rule-based Natural Language Processing (NLP) system that performs constituency parsing on Setswana sentences. The parser identifies grammatical constituents — such as Nouns (Lerui), Verbs (Leamanyi), Adjectives (Lebadi), and Adverbs (Letlhaodi) — and builds hierarchical parse trees showing the syntactic structure of each sentence.
 
-This project was built using **Python** and the **NLTK (Natural Language Toolkit)** library, using custom Setswana linguistic resource files as its foundation.
+Unlike traditional parsers that select a single "best" parse, this system generates every possible tag sequence for a given sentence by respecting lexical ambiguity. When a Setswana word can belong to multiple grammatical categories (e.g., bone can be a verb OR a pronoun), the parser explores all interpretations and produces parse trees for each valid tagging.
+
+This project was built using Python and the NLTK (Natural Language Toolkit) library, with custom Setswana linguistic resource files as its foundation.
+
+Features
+
+    Multi-Tag Dictionary – Every word maps to ALL its possible grammatical tags, enabling full ambiguity representation.
+
+    Cartesian Product Sequence Generation – Uses itertools.product to generate every possible tag sequence for a sentence.
+
+    NLTK RegexpParser Integration – Feeds each tag sequence to a grammar of Setswana constituency rules.
+
+    Multi-Format Parse Output – For each parse tree, displays:
+
+        Bracket notation (compact string representation)
+
+        Visual ASCII diagram (terminal-friendly)
+
+        Graphical popup window (via tkinter)
+
+        Python object details
+
+    Comprehensive Test Suite – Automated tests covering all core functions, edge cases, and coverage reporting.
+
+    572-word Vocabulary – Covers 88 grammatical tags specific to Setswana morphosyntax.
 
 ---
 
@@ -21,27 +45,25 @@ Constituency-Parsing/
 
 ---
 
-##  What is Constituency Parsing?
+What is Constituency Parsing?
 
-Constituency Parsing is the process of analysing a sentence and breaking it down into **groups of words that belong together**, called constituents. Each group is labelled with its grammatical role and the result is displayed as a **parse tree**.
+Constituency parsing breaks a sentence into groups of words that belong together, called constituents. Each group is labelled with its grammatical role, and the result is displayed as a parse tree.
 
-For example, the sentence **"Kgosi reka koloi"** (The chief buys a car) is parsed as:
+For example, the sentence "Kgosi reka koloi" (The chief buys a car) is parsed as:
 
-```
             S
     ________|________
    NP       |        NP
    |        |        |
  kgosi    reka     koloi
  (NN)    (VRB)     (NN)
-```
 
-- `kgosi` → Lerui (Noun) — forms a Noun Phrase (NP)
-- `reka` → Leamanyi (Verb)
-- `koloi` → Lerui (Noun) — forms another Noun Phrase (NP)
+    kgosi → Lerui (Noun) — forms a Noun Phrase (NP)
 
----
+    reka → Leamanyi (Verb) — forms the Verb Phrase head
 
+    koloi → Lerui (Noun) — forms another Noun Phrase (NP)
+    
 ##  Setswana Grammatical Categories
 
 The parser recognises the following Setswana grammatical categories:
@@ -95,7 +117,7 @@ pip install nltk tabulate
 Run this once after installing NLTK:
 
 ```bash
-python -c "import nltk; nltk.download('punkt'); nltk.download('averaged_perceptron_tagger')"
+python -c "import nltk; nltk.download('punkt')"
 ```
 
 ### Step 3 — Set Up Your Files
@@ -119,12 +141,16 @@ python "setswana_parser.py"
 You will see:
 
 ```
-=================================================================
-    SETSWANA CONSTITUENCY PARSER
-   Powered by NLTK + Your Definitions & Rules Files
-=================================================================
-✅ Loaded 572 word definitions.
-✅ Grammar rules loaded successfully.
+====================================================================
+      SETSWANA CONSTITUENCY PARSER
+    Multi-Tag Sequence Generator + NLTK Parser
+====================================================================
+
+ Loading definitions ...
+    572 words loaded.
+    X words have multiple possible tags.
+ Loading grammar rules ...
+    Grammar rules loaded.
 
 Type a Setswana sentence and press Enter.
 Type 'exit' to quit.
@@ -145,33 +171,53 @@ Type any Setswana sentence and press **Enter**.
 
 **Output:**
 ```
-=================================================================
+====================================================================
   SENTENCE: kgosi reka koloi
-=================================================================
-╒════╤══════════════╤═════╤══════════════════════════════╕
-│  # │ Lefoko       │ Tag │ Tlhaloso (Meaning)           │
-╞════╪══════════════╪═════╪══════════════════════════════╡
-│  1 │ kgosi        │ NN  │ Lerui (Noun)                 │
-│  2 │ reka         │ VRB │ Leamanyi (Verb)              │
-│  3 │ koloi        │ NN  │ Lerui (Noun)                 │
-╘════╧══════════════╧═════╧══════════════════════════════╛
+====================================================================
 
-   CONSTITUENCY BREAKDOWN:
------------------------------------------------------------------
-   Lerui — Nouns:    kgosi, koloi
-   Leamanyi — Verbs: reka
+   WORD TAG CHECK:
+--------------------------------------------------------------------
+╒════╤═════════╤════════════╤═════════════╕
+│  # │ Word    │ Possible Tags │ Ambiguous? │
+╞════╪═════════╪═════════════╪═════════════╡
+│  1 │ kgosi   │ NN          │   no        │
+│  2 │ reka    │ VRB         │   no        │
+│  3 │ koloi   │ NN          │   no        │
+╘════╧═════════╧═════════════╧═════════════╛
 
-   PARSE TREE (Bracket Notation):
------------------------------------------------------------------
-(S (NP kgosi/NN) reka/VRB (NP koloi/NN))
+   GENERATED TAG SEQUENCES (1 total):
+--------------------------------------------------------------------
 
-   PARSE TREE (Visual):
------------------------------------------------------------------
+  Sequence 1:
+    Words: kgosi reka koloi
+    Tags:  NN VRB NN
+
+   PARSE RESULTS:
+====================================================================
+
+  ── Sequence 1: NN VRB NN
+--------------------------------------------------------------------
+  a) Bracket Notation:
+     (S (NP kgosi/NN) reka/VRB (NP koloi/NN))
+
+  b) Visual Tree (ASCII):
             S
     ________|________
    NP       |        NP
    |        |        |
  kgosi    reka     koloi
+
+  c) Python Object Representation:
+     Type : <class 'nltk.tree.Tree'>
+     Label: S
+     Leaves (words): ['kgosi', 'reka', 'koloi']
+     Structured: Yes
+
+  Phrases identified:
+  Phrase    Words          Tags
+  -------   -------------  ----------
+  NP        kgosi          NN
+  NP        koloi          NN
 ```
 
 A **graphical popup window** also opens showing the full tree diagram.
