@@ -1,72 +1,52 @@
-# Constituency-Parsing
 # Setswana Constituency Parser
 
-The Setswana Constituency Parser is a rule-based Natural Language Processing (NLP) system that performs constituency parsing on Setswana sentences. The parser identifies grammatical constituents — such as Nouns (Lerui), Verbs (Leamanyi), Adjectives (Lebadi), and Adverbs (Letlhaodi) — and builds hierarchical parse trees showing the syntactic structure of each sentence.
+A rule-based Natural Language Processing (NLP) system that performs **constituency parsing** on Setswana sentences. The parser identifies grammatical constituents — such as Nouns (Lerui), Verbs (Leamanyi), Pronouns (Leemedi), and Adjectives/Adverbs (Letlhaodi) — and builds a hierarchical parse tree showing the syntactic structure of each sentence.
 
-Unlike traditional parsers that select a single "best" parse, this system generates every possible tag sequence for a given sentence by respecting lexical ambiguity. When a Setswana word can belong to multiple grammatical categories (e.g., bone can be a verb OR a pronoun), the parser explores all interpretations and produces parse trees for each valid tagging.
+This project was built using **Python** and the **NLTK (Natural Language Toolkit)** library, using custom Setswana linguistic resource files as its foundation. It was developed as part of an industrial attachment internship in the Department of Computer Science, University of Botswana (NLP research, supervised by Dr. G. Malema).
 
-This project was built using Python and the NLTK (Natural Language Toolkit) library, with custom Setswana linguistic resource files as its foundation.
-
-Features
-
-    Multi-Tag Dictionary – Every word maps to ALL its possible grammatical tags, enabling full ambiguity representation.
-
-    Cartesian Product Sequence Generation – Uses itertools.product to generate every possible tag sequence for a sentence.
-
-    NLTK RegexpParser Integration – Feeds each tag sequence to a grammar of Setswana constituency rules.
-
-    Multi-Format Parse Output – For each parse tree, displays:
-
-        Bracket notation (compact string representation)
-
-        Visual ASCII diagram (terminal-friendly)
-
-        Graphical popup window (via tkinter)
-
-        Python object details
-
-    Comprehensive Test Suite – Automated tests covering all core functions, edge cases, and coverage reporting.
-
-    572-word Vocabulary – Covers 88 grammatical tags specific to Setswana morphosyntax.
+A key feature of this parser is that it does **not** guess a single "best" tag for ambiguous words. Instead, it generates **every possible tag sequence** for a sentence and parses each one independently, so all grammatically valid interpretations are visible at once.
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 Constituency-Parsing/
 │
 ├── setswana_parser.py            ← Main parser — run this to parse sentences
 ├── Tester.py                     ← Test suite — run this to verify the parser
-├── definitions.txt               ← Setswana word dictionary (572 words, 88 tags)
-├── Parsing rules testing.txt     ← Grammar rules for constituency parsing
-└── README.md                     ← This file
+├── definitions.txt               ← Setswana multi-tag word dictionary
+├── Parsing_Regex.txt             ← Grammar rules for constituency parsing
 ```
 
 ---
 
-What is Constituency Parsing?
+## What is Constituency Parsing?
 
-Constituency parsing breaks a sentence into groups of words that belong together, called constituents. Each group is labelled with its grammatical role, and the result is displayed as a parse tree.
+Constituency Parsing is the process of analysing a sentence and breaking it down into **groups of words that belong together**, called constituents. Each group is labelled with its grammatical role, and the result is displayed as a **parse tree**.
 
-For example, the sentence "Kgosi reka koloi" (The chief buys a car) is parsed as:
+For example, the sentence **"kgosi reka koloi"** (the chief buys a car) is parsed as:
 
+```
             S
     ________|________
    NP       |        NP
    |        |        |
  kgosi    reka     koloi
  (NN)    (VRB)     (NN)
+```
 
-    kgosi → Lerui (Noun) — forms a Noun Phrase (NP)
+- `kgosi` → Lerui (Noun) — forms a Noun Phrase (NP)
+- `reka` → Leamanyi (Verb)
+- `koloi` → Lerui (Noun) — forms another Noun Phrase (NP)
 
-    reka → Leamanyi (Verb) — forms the Verb Phrase head
+Where a word has more than one possible tag (e.g. *bone*, which can be a Verb or a Pronoun), the parser produces a **separate tree for every possible reading** of the sentence, rather than picking just one.
 
-    koloi → Lerui (Noun) — forms another Noun Phrase (NP)
-    
-##  Setswana Grammatical Categories
+---
 
-The parser recognises the following Setswana grammatical categories:
+## Setswana Grammatical Categories
+
+The parser recognises the following Setswana grammatical categories (defined in `definitions.txt`):
 
 | Tag | Setswana Name | English Meaning | Example Words |
 |---|---|---|---|
@@ -88,12 +68,15 @@ The parser recognises the following Setswana grammatical categories:
 | `lesupi` | Lesupi | Demonstrative | ole, ele, yole |
 | `lebadi_thito` | Lebadi | Quantifier / Number | mongwe, babedi, botlhe |
 | `lesoboki` | Lesoboki | Totality Word | botlhe, otlhe, tsotlhe |
-| `CC1–CC9` | Kgokagano | Concord / Connector | le, ba, a, se, tse |
-| `L01–L60` | Karolo | Particle / Morpheme | ke, ka, ga, mme, fela |
+| `EE1` / `EE2` | Felo / Mokgwa | Locative / Manner | tlhoko, gaufi, thata, ruri |
+| `CC1–C15` | Kgokagano | Concord / Connector | le, ba, a, se, tse |
+| `L01–L62` | Karolo | Particle / Morpheme | ke, ka, ga, mme, fela |
+
+`UNKNOWN` is used for any word not found in `definitions.txt`.
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -112,121 +95,70 @@ Open your terminal or PowerShell and run:
 pip install nltk tabulate
 ```
 
-### Step 2 — Download NLTK Data
+### Step 2 — Set Up Your Files
 
-Run this once after installing NLTK:
-
-```bash
-python -c "import nltk; nltk.download('punkt')"
-```
-
-### Step 3 — Set Up Your Files
-
-Make sure all four files are in the **same folder**:
+Make sure all resource files are in the **same folder** as the scripts:
 
 ```
- Your Project Folder
+Your Project Folder
     ├── setswana_parser.py
     ├── Tester.py
     ├── definitions.txt
-    └── Parsing rules testing.txt
+    └── Parsing_Regex.txt
 ```
 
-### Step 4 — Run the Parser
+### Step 3 — Run the Parser
 
 ```bash
-python "setswana_parser.py"
+python setswana_parser.py
 ```
 
-You will see:
-
-```
-====================================================================
-      SETSWANA CONSTITUENCY PARSER
-    Multi-Tag Sequence Generator + NLTK Parser
-====================================================================
-
- Loading definitions ...
-    572 words loaded.
-    X words have multiple possible tags.
- Loading grammar rules ...
-    Grammar rules loaded.
-
-Type a Setswana sentence and press Enter.
-Type 'exit' to quit.
-
- Sentence:
-```
-
-Type any Setswana sentence and press **Enter**.
+Type any Setswana sentence at the prompt and press **Enter**. Type `exit` to quit.
 
 ---
 
-##  Example Usage
+## Example Usage
 
 **Input:**
 ```
- Sentence: kgosi reka koloi
+Sentence: kgosi reka koloi
 ```
 
-**Output:**
+**Output (per generated tag sequence):**
 ```
-====================================================================
+=====================================================================
   SENTENCE: kgosi reka koloi
-====================================================================
+=====================================================================
+ WORD TAG CHECK
+-----------------------------------------------------------------
+  kgosi   → ['NN']        (not ambiguous)
+  reka    → ['VRB']       (not ambiguous)
+  koloi   → ['NN']        (not ambiguous)
 
-   WORD TAG CHECK:
---------------------------------------------------------------------
-╒════╤═════════╤════════════╤═════════════╕
-│  # │ Word    │ Possible Tags │ Ambiguous? │
-╞════╪═════════╪═════════════╪═════════════╡
-│  1 │ kgosi   │ NN          │   no        │
-│  2 │ reka    │ VRB         │   no        │
-│  3 │ koloi   │ NN          │   no        │
-╘════╧═════════╧═════════════╧═════════════╛
+ GENERATED TAG SEQUENCES: 1 sequence found
+-----------------------------------------------------------------
+  Sequence 1: kgosi/NN reka/VRB koloi/NN
 
-   GENERATED TAG SEQUENCES (1 total):
---------------------------------------------------------------------
+ PARSE TREE — Bracket Notation:
+-----------------------------------------------------------------
+(S (NP kgosi/NN) reka/VRB (NP koloi/NN))
 
-  Sequence 1:
-    Words: kgosi reka koloi
-    Tags:  NN VRB NN
-
-   PARSE RESULTS:
-====================================================================
-
-  ── Sequence 1: NN VRB NN
---------------------------------------------------------------------
-  a) Bracket Notation:
-     (S (NP kgosi/NN) reka/VRB (NP koloi/NN))
-
-  b) Visual Tree (ASCII):
+ PARSE TREE — Visual:
+-----------------------------------------------------------------
             S
     ________|________
    NP       |        NP
    |        |        |
  kgosi    reka     koloi
-
-  c) Python Object Representation:
-     Type : <class 'nltk.tree.Tree'>
-     Label: S
-     Leaves (words): ['kgosi', 'reka', 'koloi']
-     Structured: Yes
-
-  Phrases identified:
-  Phrase    Words          Tags
-  -------   -------------  ----------
-  NP        kgosi          NN
-  NP        koloi          NN
 ```
 
-A **graphical popup window** also opens showing the full tree diagram.
+If a word in the sentence is ambiguous (has more than one tag), multiple sequences and multiple parse trees are produced — one per possible reading. A **graphical popup window** (via `tkinter`) also opens for each generated tree.
 
 ---
 
-##  Understanding the Parse Tree
+## Understanding the Parse Tree
 
-The parser produces the tree in **three formats**:
+The parser produces each tree in **three formats**:
 
 | Format | What it shows | How to use it |
 |---|---|---|
@@ -240,7 +172,7 @@ To use the popup window you need **tkinter** installed:
 
 ---
 
-##  Running the Tests
+## Running the Tests
 
 To verify that the parser is working correctly, run the test suite:
 
@@ -248,42 +180,25 @@ To verify that the parser is working correctly, run the test suite:
 python Tester.py
 ```
 
-The test suite runs **6 blocks** of automated tests:
+The test suite runs **7 blocks** of automated tests covering all five core functions:
 
 | Block | What It Tests |
 |---|---|
-| Block 1 — File Loading | Verifies both resource files load correctly |
-| Block 2 — Word Tagging | Tests 19 individual words across all POS categories |
-| Block 3 — Sentence Tagging | Tests 9 complete Setswana sentences |
-| Block 4 — Parse Tree Structure | Verifies NP chunks and tree structure |
-| Block 5 — Edge Cases | Tests unknown words, uppercase input, extra spaces |
-| Block 6 — Coverage Report | Visual table of all tags and word counts |
-
-A passing run looks like this:
-
-```
-============================================================
-   📊 TEST RESULTS SUMMARY
-============================================================
-╒══════════════════╤═════════╤══════════╕
-│ Result           │  Count  │ Rate     │
-╞══════════════════╪═════════╪══════════╡
-│  Tests Passed    │   58    │ 100.0%   │
-│  Tests Failed    │    0    │          │
-│  Warnings        │    0    │          │
-│  Total Tests     │   58    │          │
-╘══════════════════╧═════════╧══════════╛
-
-ALL TESTS PASSED! Your parser is working perfectly!
-```
+| Block 1 — `load_definitions_multi()` | Verifies the multi-tag dictionary loads correctly from `definitions.txt` |
+| Block 2 — `load_grammar_rules()` | Verifies grammar rules load correctly from `Parsing_Regex.txt` |
+| Block 3 — `check_word_tags()` | Verifies ambiguous vs. unambiguous words are correctly flagged |
+| Block 4 — `generate_tag_sequences()` | Verifies the Cartesian product produces the correct number of sequences |
+| Block 5 — `parse_sequence()` | Verifies each generated sequence produces a valid parse tree |
+| Block 6 — Edge Cases | Tests unknown words, uppercase input, extra spaces |
+| Block 7 — Dictionary Coverage Report | Visual summary table of all tags and word counts |
 
 ---
 
-##  Resource Files Explained
+## Resource Files Explained
 
 ### definitions.txt
 
-This file is the **word dictionary** of the parser. Each line maps a grammatical tag to a list of Setswana words:
+This file is the **multi-tag word dictionary** of the parser. Each line maps a grammatical tag to a list of Setswana words:
 
 ```
 NN:bana.metsi.leswe.sekolo.dikoloi.koloi.tsela.
@@ -293,11 +208,11 @@ letlhaodi_thito:sentle.bonako.gantsi.thata.monate.
 
 - Tags are on the **left** of the colon
 - Words are on the **right**, separated by dots (`.`)
-- The file currently contains **572 words** across **88 grammatical tags**
+- A word can appear under more than one tag (e.g. *bone* appears under both `VRB` and `leemedi`) — `load_definitions_multi()` collects **all** of a word's tags into a list rather than keeping only the first one found.
 
-### Parsing rules testing.txt
+### Parsing_Regex.txt
 
-This file contains the **grammar rules** that tell NLTK how to group tagged words into phrases. Rules are written in NLTK's RegexpParser format:
+This file contains the **grammar rules** that tell NLTK how to group tagged words into phrases. Rules are written in NLTK's `RegexpParser` format:
 
 ```
 NP: {<NN>}
@@ -311,16 +226,16 @@ Each rule defines how constituents combine. For example, `{<NP><CC6><NP>}` means
 
 ---
 
-##  Known Limitations
+## Known Limitations
 
-- **Dictionary size** — The parser currently knows 572 words. Words not in `definitions.txt` are tagged as `UNKNOWN` and may not parse correctly. Adding more words to the definitions file will improve results.
-- **Ambiguous words** — Some Setswana words appear in multiple grammatical categories. The parser assigns the tag from whichever category lists the word first in `definitions.txt`. Examples: *tsamaeng* (tagged `VBMD_ng`), *ruri* (tagged `letlhaodi_thito`).
-- **Multi-word expressions** — Phrases like *"lwa ntlha"* (for the first time) in the rules file are currently skipped. Single-word entries only.
+- **Dictionary size** — Words not present in `definitions.txt` are tagged as `UNKNOWN` and may not parse correctly. Adding more words improves coverage.
+- **Multi-word expressions** — Phrases containing spaces (e.g. *"lwa ntlha"*, "for the first time") in the rules/definitions files are currently skipped. Single-word entries only.
+- **Combinatorial growth** — Because every ambiguous word multiplies the number of generated sequences, sentences with several ambiguous words can produce a large number of parse trees, some of which may not yield structured (non-flat) trees.
 - **Popup window** — The graphical tree window (`tree.draw()`) requires `tkinter`. If it is not available, the ASCII diagram is still displayed in the terminal.
 
 ---
 
-##  How to Extend the Parser
+## How to Extend the Parser
 
 ### Adding more words to the dictionary
 
@@ -331,9 +246,11 @@ NN:bana.metsi.sekolo.YOUR_NEW_NOUN.
 VRB:tsamaya.reka.YOUR_NEW_VERB.
 ```
 
+If a word can belong to more than one category, simply add it to each relevant tag line — `load_definitions_multi()` will pick up every occurrence.
+
 ### Adding new grammar rules
 
-Open `Parsing rules testing.txt` and add rules under the appropriate constituent label:
+Open `Parsing_Regex.txt` and add rules under the appropriate constituent label:
 
 ```
 NP: {<NN>}
@@ -343,19 +260,20 @@ NP: {<NN>}
 
 ---
 
-##  Built With
+## Built With
 
 | Tool | Version | Purpose |
 |---|---|---|
 | Python | 3.7+ | Programming language |
-| NLTK | Latest | RegexpParser, parse tree building and display |
+| NLTK | Latest | `RegexpParser`, parse tree building and display |
 | tabulate | Latest | Formatted table output in terminal |
+| itertools | Built-in | `product()` for Cartesian-product tag sequence generation |
 | tkinter | Built-in | Graphical parse tree popup window |
 | re | Built-in | Regular expressions for parsing rule patterns |
 
 ---
 
-##  Why This Project Matters
+## Why This Project Matters
 
 Setswana is spoken by approximately **9 million people** across Botswana, South Africa, Zimbabwe, and Namibia. Despite this, it remains a **low-resource language** in the field of NLP — meaning there are very few computational tools built for it compared to languages like English or French.
 
@@ -363,10 +281,27 @@ This project contributes to bridging that gap by building an open, rule-based co
 
 ---
 
-##  License
+## Changes: Week 1 → Week 2
+
+**Week 1** focused on building the first working version of the parser:
+- Implemented a dictionary-based POS tagger mapping Setswana words to grammatical tags, with each word stored under a **single** tag.
+- Built the initial rule-based constituency parser using NLTK, with grammar rules loaded via regular expressions.
+- Learned Python fundamentals (coming from a Java background): variables, loops, functions, classes, raw strings (`r"..."`) for Windows file paths, and `os.path` for portable, dynamic path handling.
+- Produced parse tree output in bracket notation, ASCII diagrams, and `tkinter` popup windows.
+- Identified a key limitation: some Setswana words (e.g. *bone*) belong to more than one grammatical category, but the single-tag dictionary could only capture one interpretation per word.
+
+**Week 2** redesigned and rebuilt the parser around solving that limitation:
+- Replaced the single-tag dictionary with **`load_definitions_multi()`**, which stores *every* tag a word can take, fully representing lexical ambiguity.
+- Added **`generate_tag_sequences()`**, using `itertools.product` to generate the full Cartesian product of tag options across a sentence — so a sentence with two ambiguous words (two tags each) now produces all four valid tag sequences, instead of just one guessed sequence.
+- Shifted the program's goal from *picking the single best parse* (Week 1's scoring/ranking approach) to *exposing every grammatically valid interpretation* of a sentence simultaneously — a simpler, more focused design aligned with the actual research objective.
+- Rebuilt **`Tester.py`** from scratch with seven test blocks covering all five core functions, edge cases, and a dictionary coverage report.
+- Verified `generate_tag_sequences()` against the example sentence from the project specification.
+- Outstanding work carried into Week 3: testing against a broader range of Setswana sentences, and investigating how the grammar rules file can be extended to produce structured (non-flat) parse trees across more sentence patterns.
+
+---
+
+## License
 
 This project is open source and available for academic and research use.
 
 ---
-
-*Built with for the Setswana language and African NLP research.*
